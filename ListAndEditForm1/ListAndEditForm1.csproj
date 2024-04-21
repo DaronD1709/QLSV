@@ -114,6 +114,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLSVDBDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLSVDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSVDBDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Score\AddScoreForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +332,17 @@
     </None>
     <None Include="QLSVDBDataSet5.xss">
       <DependentUpon>QLSVDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDBDataSet6.xsc">
+      <DependentUpon>QLSVDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSVDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLSVDBDataSet6.xss">
+      <DependentUpon>QLSVDBDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Resources\20230620_035549551_iOS.jpg" />
   </ItemGroup>

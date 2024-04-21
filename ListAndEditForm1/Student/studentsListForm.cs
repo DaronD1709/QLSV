@@ -29,9 +29,11 @@ namespace ListAndEditForm1
 
         private void studentsListForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qLSVDBDataSet6.std' table. You can move, or remove it, as needed.
+            this.stdTableAdapter4.Fill(this.qLSVDBDataSet6.std);
             // TODO: This line of code loads data into the 'qLSVDBDataSet5.std' table. You can move, or remove it, as needed.
-           
-            this.stdTableAdapter3.Fill(this.qLSVDBDataSet5.std);
+
+  
             SqlCommand command = new SqlCommand("SELECT * FROM std");
             dataGridView1.ReadOnly = true;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
@@ -253,6 +255,7 @@ namespace ListAndEditForm1
             upDestudent.tb_fname.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             upDestudent.tb_lname.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             upDestudent.dtP.Value = (DateTime)dataGridView1.CurrentRow.Cells[3].Value;
+            upDestudent.txtmail.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             if (dataGridView1.CurrentRow.Cells[5].Value.ToString().Trim() == "Female")
             {
                 upDestudent.rb_Female.Checked = true;
@@ -275,6 +278,11 @@ namespace ListAndEditForm1
             }
 
             upDestudent.Show();
+        }
+
+        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

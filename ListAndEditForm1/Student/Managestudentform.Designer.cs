@@ -56,6 +56,8 @@
             this.textboxsearch = new System.Windows.Forms.TextBox();
             this.btSearch = new System.Windows.Forms.Button();
             this.LabelTotalStudent = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.TextBoxMail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxStudentImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -63,58 +65,58 @@
             // txtStudentID
             // 
             this.txtStudentID.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStudentID.Location = new System.Drawing.Point(130, 41);
-            this.txtStudentID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStudentID.Location = new System.Drawing.Point(173, 27);
+            this.txtStudentID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(92, 25);
+            this.txtStudentID.Size = new System.Drawing.Size(121, 29);
             this.txtStudentID.TabIndex = 0;
             this.txtStudentID.TextChanged += new System.EventHandler(this.txtStudentID_TextChanged);
             // 
             // TextBoxFname
             // 
             this.TextBoxFname.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxFname.Location = new System.Drawing.Point(130, 84);
-            this.TextBoxFname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextBoxFname.Location = new System.Drawing.Point(173, 70);
+            this.TextBoxFname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxFname.Name = "TextBoxFname";
-            this.TextBoxFname.Size = new System.Drawing.Size(182, 25);
+            this.TextBoxFname.Size = new System.Drawing.Size(241, 29);
             this.TextBoxFname.TabIndex = 1;
             // 
             // TextBoxLname
             // 
             this.TextBoxLname.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxLname.Location = new System.Drawing.Point(130, 123);
-            this.TextBoxLname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextBoxLname.Location = new System.Drawing.Point(173, 118);
+            this.TextBoxLname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxLname.Name = "TextBoxLname";
-            this.TextBoxLname.Size = new System.Drawing.Size(182, 25);
+            this.TextBoxLname.Size = new System.Drawing.Size(241, 29);
             this.TextBoxLname.TabIndex = 2;
             // 
             // TextBoxPhone
             // 
             this.TextBoxPhone.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxPhone.Location = new System.Drawing.Point(130, 232);
-            this.TextBoxPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextBoxPhone.Location = new System.Drawing.Point(173, 314);
+            this.TextBoxPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxPhone.Name = "TextBoxPhone";
-            this.TextBoxPhone.Size = new System.Drawing.Size(182, 25);
+            this.TextBoxPhone.Size = new System.Drawing.Size(241, 29);
             this.TextBoxPhone.TabIndex = 3;
             this.TextBoxPhone.TextChanged += new System.EventHandler(this.TextBoxPhone_TextChanged);
             // 
             // TextBoxAddress
             // 
             this.TextBoxAddress.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxAddress.Location = new System.Drawing.Point(130, 267);
-            this.TextBoxAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextBoxAddress.Location = new System.Drawing.Point(173, 357);
+            this.TextBoxAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxAddress.Name = "TextBoxAddress";
-            this.TextBoxAddress.Size = new System.Drawing.Size(182, 25);
+            this.TextBoxAddress.Size = new System.Drawing.Size(241, 29);
             this.TextBoxAddress.TabIndex = 4;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(130, 159);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(173, 163);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(182, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(241, 31);
             this.dateTimePicker1.TabIndex = 5;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -122,10 +124,10 @@
             // 
             this.rbuttonMale.AutoSize = true;
             this.rbuttonMale.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbuttonMale.Location = new System.Drawing.Point(131, 197);
-            this.rbuttonMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbuttonMale.Location = new System.Drawing.Point(175, 270);
+            this.rbuttonMale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbuttonMale.Name = "rbuttonMale";
-            this.rbuttonMale.Size = new System.Drawing.Size(55, 28);
+            this.rbuttonMale.Size = new System.Drawing.Size(67, 32);
             this.rbuttonMale.TabIndex = 6;
             this.rbuttonMale.TabStop = true;
             this.rbuttonMale.Text = "Male";
@@ -135,10 +137,10 @@
             // 
             this.rbuttonFemale.AutoSize = true;
             this.rbuttonFemale.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbuttonFemale.Location = new System.Drawing.Point(224, 197);
-            this.rbuttonFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbuttonFemale.Location = new System.Drawing.Point(299, 270);
+            this.rbuttonFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbuttonFemale.Name = "rbuttonFemale";
-            this.rbuttonFemale.Size = new System.Drawing.Size(69, 28);
+            this.rbuttonFemale.Size = new System.Drawing.Size(85, 32);
             this.rbuttonFemale.TabIndex = 7;
             this.rbuttonFemale.TabStop = true;
             this.rbuttonFemale.Text = "Female";
@@ -147,10 +149,10 @@
             // btUpload
             // 
             this.btUpload.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btUpload.Location = new System.Drawing.Point(99, 433);
-            this.btUpload.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btUpload.Location = new System.Drawing.Point(92, 561);
+            this.btUpload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btUpload.Name = "btUpload";
-            this.btUpload.Size = new System.Drawing.Size(93, 38);
+            this.btUpload.Size = new System.Drawing.Size(124, 47);
             this.btUpload.TabIndex = 8;
             this.btUpload.Text = "Upload";
             this.btUpload.UseVisualStyleBackColor = true;
@@ -159,10 +161,10 @@
             // btDowload
             // 
             this.btDowload.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDowload.Location = new System.Drawing.Point(248, 433);
-            this.btDowload.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btDowload.Location = new System.Drawing.Point(331, 561);
+            this.btDowload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btDowload.Name = "btDowload";
-            this.btDowload.Size = new System.Drawing.Size(89, 38);
+            this.btDowload.Size = new System.Drawing.Size(119, 47);
             this.btDowload.TabIndex = 9;
             this.btDowload.Text = "Dowload";
             this.btDowload.UseVisualStyleBackColor = true;
@@ -170,10 +172,10 @@
             // 
             // PictureBoxStudentImage
             // 
-            this.PictureBoxStudentImage.Location = new System.Drawing.Point(130, 304);
-            this.PictureBoxStudentImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PictureBoxStudentImage.Location = new System.Drawing.Point(173, 402);
+            this.PictureBoxStudentImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBoxStudentImage.Name = "PictureBoxStudentImage";
-            this.PictureBoxStudentImage.Size = new System.Drawing.Size(181, 116);
+            this.PictureBoxStudentImage.Size = new System.Drawing.Size(241, 143);
             this.PictureBoxStudentImage.TabIndex = 10;
             this.PictureBoxStudentImage.TabStop = false;
             // 
@@ -181,10 +183,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(40, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 24);
+            this.label1.Size = new System.Drawing.Size(31, 28);
             this.label1.TabIndex = 11;
             this.label1.Text = "ID:";
             // 
@@ -192,10 +193,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 80);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(40, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 24);
+            this.label2.Size = new System.Drawing.Size(103, 28);
             this.label2.TabIndex = 12;
             this.label2.Text = "First Name :";
             // 
@@ -203,10 +203,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 124);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(40, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 24);
+            this.label3.Size = new System.Drawing.Size(100, 28);
             this.label3.TabIndex = 13;
             this.label3.Text = "Last Name :";
             // 
@@ -214,10 +213,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 159);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(40, 163);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 24);
+            this.label4.Size = new System.Drawing.Size(113, 28);
             this.label4.TabIndex = 14;
             this.label4.Text = "Date Of Birth:";
             // 
@@ -225,10 +223,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 197);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(40, 270);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 24);
+            this.label5.Size = new System.Drawing.Size(71, 28);
             this.label5.TabIndex = 15;
             this.label5.Text = "Gender:";
             // 
@@ -236,10 +233,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 230);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(40, 311);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 24);
+            this.label6.Size = new System.Drawing.Size(63, 28);
             this.label6.TabIndex = 16;
             this.label6.Text = "Phone:";
             // 
@@ -247,10 +243,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(30, 262);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(40, 350);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 24);
+            this.label7.Size = new System.Drawing.Size(80, 28);
             this.label7.TabIndex = 17;
             this.label7.Text = "Address:";
             // 
@@ -258,10 +253,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(30, 292);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(40, 387);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 24);
+            this.label8.Size = new System.Drawing.Size(77, 28);
             this.label8.TabIndex = 18;
             this.label8.Text = "Picture :";
             // 
@@ -270,10 +264,10 @@
             this.btAdd.BackColor = System.Drawing.Color.RoyalBlue;
             this.btAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAdd.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAdd.Location = new System.Drawing.Point(273, 518);
-            this.btAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAdd.Location = new System.Drawing.Point(364, 638);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(103, 32);
+            this.btAdd.Size = new System.Drawing.Size(137, 39);
             this.btAdd.TabIndex = 19;
             this.btAdd.Text = "Add";
             this.btAdd.UseVisualStyleBackColor = false;
@@ -284,10 +278,10 @@
             this.btEdit.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEdit.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEdit.Location = new System.Drawing.Point(425, 518);
-            this.btEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btEdit.Location = new System.Drawing.Point(567, 638);
+            this.btEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btEdit.Name = "btEdit";
-            this.btEdit.Size = new System.Drawing.Size(103, 32);
+            this.btEdit.Size = new System.Drawing.Size(137, 39);
             this.btEdit.TabIndex = 20;
             this.btEdit.Text = "Edit";
             this.btEdit.UseVisualStyleBackColor = false;
@@ -298,10 +292,10 @@
             this.btRemove.BackColor = System.Drawing.Color.Red;
             this.btRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRemove.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRemove.Location = new System.Drawing.Point(568, 518);
-            this.btRemove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btRemove.Location = new System.Drawing.Point(757, 638);
+            this.btRemove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btRemove.Name = "btRemove";
-            this.btRemove.Size = new System.Drawing.Size(104, 32);
+            this.btRemove.Size = new System.Drawing.Size(139, 39);
             this.btRemove.TabIndex = 21;
             this.btRemove.Text = "Remove";
             this.btRemove.UseVisualStyleBackColor = false;
@@ -312,10 +306,10 @@
             this.btReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btReset.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btReset.Location = new System.Drawing.Point(723, 518);
-            this.btReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btReset.Location = new System.Drawing.Point(964, 638);
+            this.btReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btReset.Name = "btReset";
-            this.btReset.Size = new System.Drawing.Size(105, 32);
+            this.btReset.Size = new System.Drawing.Size(140, 39);
             this.btReset.TabIndex = 22;
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = false;
@@ -324,12 +318,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(439, 100);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(585, 123);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(634, 331);
+            this.dataGridView1.Size = new System.Drawing.Size(845, 407);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick_1);
@@ -338,20 +332,19 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Agency FB", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(556, 44);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(741, 54);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(206, 22);
+            this.label9.Size = new System.Drawing.Size(237, 26);
             this.label9.TabIndex = 24;
             this.label9.Text = "Search Fname, Lname, Address :";
             // 
             // textboxsearch
             // 
             this.textboxsearch.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxsearch.Location = new System.Drawing.Point(804, 44);
-            this.textboxsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textboxsearch.Location = new System.Drawing.Point(1072, 54);
+            this.textboxsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textboxsearch.Name = "textboxsearch";
-            this.textboxsearch.Size = new System.Drawing.Size(152, 25);
+            this.textboxsearch.Size = new System.Drawing.Size(201, 29);
             this.textboxsearch.TabIndex = 25;
             // 
             // btSearch
@@ -359,10 +352,10 @@
             this.btSearch.BackColor = System.Drawing.Color.SteelBlue;
             this.btSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSearch.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSearch.Location = new System.Drawing.Point(967, 39);
-            this.btSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btSearch.Location = new System.Drawing.Point(1289, 48);
+            this.btSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSearch.Name = "btSearch";
-            this.btSearch.Size = new System.Drawing.Size(100, 33);
+            this.btSearch.Size = new System.Drawing.Size(133, 41);
             this.btSearch.TabIndex = 26;
             this.btSearch.Text = "Search";
             this.btSearch.UseVisualStyleBackColor = false;
@@ -372,20 +365,42 @@
             // 
             this.LabelTotalStudent.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.LabelTotalStudent.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTotalStudent.Location = new System.Drawing.Point(817, 433);
+            this.LabelTotalStudent.Location = new System.Drawing.Point(1089, 533);
+            this.LabelTotalStudent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelTotalStudent.Name = "LabelTotalStudent";
-            this.LabelTotalStudent.Size = new System.Drawing.Size(256, 41);
+            this.LabelTotalStudent.Size = new System.Drawing.Size(341, 50);
             this.LabelTotalStudent.TabIndex = 27;
             this.LabelTotalStudent.Text = "Total Student :";
             this.LabelTotalStudent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LabelTotalStudent.Click += new System.EventHandler(this.LabelTotalStudent_Click_1);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(40, 220);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(60, 28);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "Email :";
+            // 
+            // TextBoxMail
+            // 
+            this.TextBoxMail.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxMail.Location = new System.Drawing.Point(173, 218);
+            this.TextBoxMail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBoxMail.Name = "TextBoxMail";
+            this.TextBoxMail.Size = new System.Drawing.Size(241, 29);
+            this.TextBoxMail.TabIndex = 28;
+            // 
             // Managestudentform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1099, 590);
+            this.ClientSize = new System.Drawing.Size(1465, 726);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.TextBoxMail);
             this.Controls.Add(this.LabelTotalStudent);
             this.Controls.Add(this.btSearch);
             this.Controls.Add(this.textboxsearch);
@@ -414,7 +429,7 @@
             this.Controls.Add(this.TextBoxLname);
             this.Controls.Add(this.TextBoxFname);
             this.Controls.Add(this.txtStudentID);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Managestudentform";
             this.Text = "Managestudentform";
             this.Load += new System.EventHandler(this.Managestudentform_Load);
@@ -455,5 +470,7 @@
         private System.Windows.Forms.TextBox textboxsearch;
         private System.Windows.Forms.Button btSearch;
         private System.Windows.Forms.Label LabelTotalStudent;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox TextBoxMail;
     }
 }

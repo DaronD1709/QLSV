@@ -16,8 +16,10 @@ namespace ListAndEditForm1
         public Form1()
         {
             InitializeComponent();
+
         }
 
+        
         private void bt_Login_Click(object sender, EventArgs e)
         {
             MY_DB db = new MY_DB();

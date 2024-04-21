@@ -176,6 +176,7 @@ namespace ListAndEditForm1
             string phone = TextBoxPhone.Text;
             string adrs = TextBoxAddress.Text;
             string gender = "Male";
+            string email = $"{id}@student.hcmute.edu.vn";
 
             if (rbuttonFemale.Checked)
             {
@@ -193,7 +194,7 @@ namespace ListAndEditForm1
             else if (verif())
             {
                 PictureBoxStudentImage.Image.Save(pic, PictureBoxStudentImage.Image.RawFormat);
-                if (student.insertStudent(id, fname, lname, bdate, gender, phone, adrs, pic))
+                if (student.insertStudent(id, fname, lname, bdate, email, gender, phone, adrs, pic))
                 {
                     MessageBox.Show("New Student Added", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

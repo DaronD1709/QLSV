@@ -19,6 +19,8 @@ namespace ListAndEditForm1.CourseNScore
 
         Course course = new Course();
         int pos;
+        MY_DB mydb = new MY_DB();
+        public static string x;
 
         private void ManageCourseForm_Load(object sender, EventArgs e)
         {
@@ -42,6 +44,17 @@ namespace ListAndEditForm1.CourseNScore
             TextBoxCourseName.Text = dr.ItemArray[1].ToString();
             NumericUpDownHours.Value = int.Parse(dr.ItemArray[2].ToString());
             TextBoxDescription.Text = dr.ItemArray[3].ToString();
+            int numberOfTerms = int.Parse(dr.ItemArray[4].ToString());
+
+            foreach (var item in comboBox1.Items)
+            {
+                if (item.ToString() == numberOfTerms.ToString())
+                {
+                    comboBox1.SelectedItem = item;
+                    break;
+                }
+            }
+            x = TextBoxCourseName.Text;
         }
 
         private void ListBoxCourses_SelectedIndexChanged(object sender, EventArgs e)
@@ -179,7 +192,11 @@ namespace ListAndEditForm1.CourseNScore
 
         private void ListBoxCourses_DoubleClick(object sender, EventArgs e)
         {
-
+            int courseId = Convert.ToInt32(ListBoxCourses.SelectedValue);
+            CourseStudentList coursestudentlist = new CourseStudentList();
+            // Gọi phương thức từ form "CourseStudentList" để hiển thị dữ liệu sinh viên
+            coursestudentlist.DisplayStudents(courseId);
+            coursestudentlist.Show();
         }
     }
 }

@@ -47,7 +47,6 @@
             this.stdBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.stdTableAdapter3 = new ListAndEditForm1.QLSVDBDataSet5TableAdapters.stdTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.qLSVDBDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +57,10 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.selectedCourseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.stdBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet6 = new ListAndEditForm1.QLSVDBDataSet6();
+            this.qLSVDBDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stdTableAdapter4 = new ListAndEditForm1.QLSVDBDataSet6TableAdapters.stdTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QLSVDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource3)).BeginInit();
@@ -69,6 +72,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,10 +94,10 @@
             // ButtonRefresh
             // 
             this.ButtonRefresh.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonRefresh.Location = new System.Drawing.Point(665, 372);
-            this.ButtonRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonRefresh.Location = new System.Drawing.Point(852, 480);
+            this.ButtonRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonRefresh.Name = "ButtonRefresh";
-            this.ButtonRefresh.Size = new System.Drawing.Size(141, 49);
+            this.ButtonRefresh.Size = new System.Drawing.Size(188, 60);
             this.ButtonRefresh.TabIndex = 1;
             this.ButtonRefresh.Text = "Refresh";
             this.ButtonRefresh.UseVisualStyleBackColor = true;
@@ -101,10 +106,10 @@
             // btnimport
             // 
             this.btnimport.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnimport.Location = new System.Drawing.Point(276, 372);
-            this.btnimport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnimport.Location = new System.Drawing.Point(333, 480);
+            this.btnimport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnimport.Name = "btnimport";
-            this.btnimport.Size = new System.Drawing.Size(141, 49);
+            this.btnimport.Size = new System.Drawing.Size(188, 60);
             this.btnimport.TabIndex = 2;
             this.btnimport.Text = "Import";
             this.btnimport.UseVisualStyleBackColor = true;
@@ -142,10 +147,10 @@
             // btnsave
             // 
             this.btnsave.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(465, 372);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsave.Location = new System.Drawing.Point(585, 480);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(141, 49);
+            this.btnsave.Size = new System.Drawing.Size(188, 60);
             this.btnsave.TabIndex = 4;
             this.btnsave.Text = "Save In DB";
             this.btnsave.UseVisualStyleBackColor = true;
@@ -177,6 +182,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -189,90 +195,117 @@
             this.addressDataGridViewTextBoxColumn,
             this.selectedCourseDataGridViewTextBoxColumn,
             this.pictureDataGridViewImageColumn});
-            this.dataGridView1.DataSource = this.stdBindingSource5;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 24);
+            this.dataGridView1.DataSource = this.stdBindingSource6;
+            this.dataGridView1.Location = new System.Drawing.Point(44, 30);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1049, 328);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1305, 404);
             this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_2);
             this.dataGridView1.CurrentCellChanged += new System.EventHandler(this.dataGridView1_CurrentCellChanged);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick_2);
-            // 
-            // qLSVDBDataSet5BindingSource
-            // 
-            this.qLSVDBDataSet5BindingSource.DataSource = this.qLSVDBDataSet5;
-            this.qLSVDBDataSet5BindingSource.Position = 0;
             // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             // 
             // fnameDataGridViewTextBoxColumn
             // 
             this.fnameDataGridViewTextBoxColumn.DataPropertyName = "fname";
             this.fnameDataGridViewTextBoxColumn.HeaderText = "fname";
+            this.fnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.fnameDataGridViewTextBoxColumn.Name = "fnameDataGridViewTextBoxColumn";
             // 
             // lnameDataGridViewTextBoxColumn
             // 
             this.lnameDataGridViewTextBoxColumn.DataPropertyName = "lname";
             this.lnameDataGridViewTextBoxColumn.HeaderText = "lname";
+            this.lnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.lnameDataGridViewTextBoxColumn.Name = "lnameDataGridViewTextBoxColumn";
             // 
             // bdateDataGridViewTextBoxColumn
             // 
             this.bdateDataGridViewTextBoxColumn.DataPropertyName = "bdate";
             this.bdateDataGridViewTextBoxColumn.HeaderText = "bdate";
+            this.bdateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bdateDataGridViewTextBoxColumn.Name = "bdateDataGridViewTextBoxColumn";
             // 
             // emailDataGridViewTextBoxColumn
             // 
             this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
             this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             // 
             // genderDataGridViewTextBoxColumn
             // 
             this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
             this.genderDataGridViewTextBoxColumn.HeaderText = "gender";
+            this.genderDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
             // 
             // phoneDataGridViewTextBoxColumn
             // 
             this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
             this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
+            this.phoneDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
             // 
             // addressDataGridViewTextBoxColumn
             // 
             this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
             this.addressDataGridViewTextBoxColumn.HeaderText = "address";
+            this.addressDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
             // 
             // selectedCourseDataGridViewTextBoxColumn
             // 
             this.selectedCourseDataGridViewTextBoxColumn.DataPropertyName = "SelectedCourse";
             this.selectedCourseDataGridViewTextBoxColumn.HeaderText = "SelectedCourse";
+            this.selectedCourseDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.selectedCourseDataGridViewTextBoxColumn.Name = "selectedCourseDataGridViewTextBoxColumn";
             // 
             // pictureDataGridViewImageColumn
             // 
             this.pictureDataGridViewImageColumn.DataPropertyName = "picture";
             this.pictureDataGridViewImageColumn.HeaderText = "picture";
+            this.pictureDataGridViewImageColumn.MinimumWidth = 6;
             this.pictureDataGridViewImageColumn.Name = "pictureDataGridViewImageColumn";
+            // 
+            // stdBindingSource6
+            // 
+            this.stdBindingSource6.DataMember = "std";
+            this.stdBindingSource6.DataSource = this.qLSVDBDataSet6;
+            // 
+            // qLSVDBDataSet6
+            // 
+            this.qLSVDBDataSet6.DataSetName = "QLSVDBDataSet6";
+            this.qLSVDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // qLSVDBDataSet5BindingSource
+            // 
+            this.qLSVDBDataSet5BindingSource.DataSource = this.qLSVDBDataSet5;
+            this.qLSVDBDataSet5BindingSource.Position = 0;
+            // 
+            // stdTableAdapter4
+            // 
+            this.stdTableAdapter4.ClearBeforeFill = true;
             // 
             // studentsListForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(1105, 471);
+            this.ClientSize = new System.Drawing.Size(1376, 580);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btnimport);
             this.Controls.Add(this.ButtonRefresh);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "studentsListForm";
             this.Text = "studentsListForm";
             this.Load += new System.EventHandler(this.studentsListForm_Load);
@@ -287,6 +320,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5BindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -322,5 +357,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn selectedCourseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn pictureDataGridViewImageColumn;
         private System.Windows.Forms.BindingSource qLSVDBDataSet5BindingSource;
+        private QLSVDBDataSet6 qLSVDBDataSet6;
+        private System.Windows.Forms.BindingSource stdBindingSource6;
+        private QLSVDBDataSet6TableAdapters.stdTableAdapter stdTableAdapter4;
     }
 }

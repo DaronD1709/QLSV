@@ -35,6 +35,7 @@ namespace ListAndEditForm1
             string fname = TextBoxFirstName.Text;
             string lname = TextBoxLastName.Text;
             DateTime bdate = dateTimePicker1.Value;
+            string email = $"{id}{fname}@student.hcmute.edu.vn";
             string phone = TextBoxPhone.Text;
             string adrs = TextBoxAddress.Text;
             string gender = "Male";
@@ -55,7 +56,7 @@ namespace ListAndEditForm1
             else if (verif())
             {
                 PictureBoxStudentImage.Image.Save(pic, PictureBoxStudentImage.Image.RawFormat);
-                if (student.insertStudent(id, fname, lname, bdate, gender, phone, adrs, pic))
+                if (student.insertStudent(id, fname, lname, bdate, email, gender, phone, adrs, pic))
                 {
                     MessageBox.Show("New Student Added", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -70,6 +71,17 @@ namespace ListAndEditForm1
             {
                 MessageBox.Show("Empty Fields", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+
+            TextBoxID.Clear();
+            TextBoxFirstName.Clear();
+            TextBoxLastName.Clear();
+            TextBoxPhone.Clear();   
+            dateTimePicker1.Checked = false;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            TextBoxAddress.Clear(); 
+            
+
         }
         bool verif()
         {

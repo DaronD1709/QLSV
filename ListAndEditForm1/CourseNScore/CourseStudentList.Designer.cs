@@ -37,10 +37,14 @@
             this.btnprint = new System.Windows.Forms.Button();
             this.stdTableAdapter = new ListAndEditForm1.QLSVDBDataSet3TableAdapters.stdTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.qLSVDBDataSet5 = new ListAndEditForm1.QLSVDBDataSet5();
-            this.qLSVDBDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stdBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet5 = new ListAndEditForm1.QLSVDBDataSet5();
             this.stdTableAdapter1 = new ListAndEditForm1.QLSVDBDataSet5TableAdapters.stdTableAdapter();
+            this.qLSVDBDataSet6 = new ListAndEditForm1.QLSVDBDataSet6();
+            this.qLSVDBDataSet6BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stdBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.stdTableAdapter2 = new ListAndEditForm1.QLSVDBDataSet6TableAdapters.stdTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,22 +55,25 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.selectedCourseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnsearchcourse = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(171, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(285, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 26);
+            this.label1.Size = new System.Drawing.Size(149, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Course Name :";
             // 
@@ -74,21 +81,20 @@
             // 
             this.semesterlabel.AutoSize = true;
             this.semesterlabel.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.semesterlabel.Location = new System.Drawing.Point(632, 33);
-            this.semesterlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.semesterlabel.Location = new System.Drawing.Point(1101, 48);
             this.semesterlabel.Name = "semesterlabel";
-            this.semesterlabel.Size = new System.Drawing.Size(93, 26);
+            this.semesterlabel.Size = new System.Drawing.Size(121, 35);
             this.semesterlabel.TabIndex = 1;
             this.semesterlabel.Text = "Semester : ";
             // 
             // txtnamecourse
             // 
             this.txtnamecourse.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnamecourse.Location = new System.Drawing.Point(309, 30);
-            this.txtnamecourse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnamecourse.Location = new System.Drawing.Point(469, 44);
+            this.txtnamecourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtnamecourse.Multiline = true;
             this.txtnamecourse.Name = "txtnamecourse";
-            this.txtnamecourse.Size = new System.Drawing.Size(246, 41);
+            this.txtnamecourse.Size = new System.Drawing.Size(327, 50);
             this.txtnamecourse.TabIndex = 2;
             // 
             // stdBindingSource
@@ -106,10 +112,10 @@
             this.btnprint.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnprint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprint.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprint.Location = new System.Drawing.Point(452, 441);
-            this.btnprint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnprint.Location = new System.Drawing.Point(586, 545);
+            this.btnprint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(212, 45);
+            this.btnprint.Size = new System.Drawing.Size(283, 55);
             this.btnprint.TabIndex = 4;
             this.btnprint.Text = "Print";
             this.btnprint.UseVisualStyleBackColor = false;
@@ -122,6 +128,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -134,111 +141,160 @@
             this.addressDataGridViewTextBoxColumn,
             this.selectedCourseDataGridViewTextBoxColumn,
             this.pictureDataGridViewImageColumn});
-            this.dataGridView1.DataSource = this.stdBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 103);
+            this.dataGridView1.DataSource = this.stdBindingSource2;
+            this.dataGridView1.Location = new System.Drawing.Point(61, 127);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1052, 318);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1310, 391);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // qLSVDBDataSet5
-            // 
-            this.qLSVDBDataSet5.DataSetName = "QLSVDBDataSet5";
-            this.qLSVDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // qLSVDBDataSet5BindingSource
-            // 
-            this.qLSVDBDataSet5BindingSource.DataSource = this.qLSVDBDataSet5;
-            this.qLSVDBDataSet5BindingSource.Position = 0;
             // 
             // stdBindingSource1
             // 
             this.stdBindingSource1.DataMember = "std";
             this.stdBindingSource1.DataSource = this.qLSVDBDataSet5BindingSource;
             // 
+            // qLSVDBDataSet5BindingSource
+            // 
+            this.qLSVDBDataSet5BindingSource.DataSource = this.qLSVDBDataSet5;
+            this.qLSVDBDataSet5BindingSource.Position = 0;
+            // 
+            // qLSVDBDataSet5
+            // 
+            this.qLSVDBDataSet5.DataSetName = "QLSVDBDataSet5";
+            this.qLSVDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // stdTableAdapter1
             // 
             this.stdTableAdapter1.ClearBeforeFill = true;
+            // 
+            // qLSVDBDataSet6
+            // 
+            this.qLSVDBDataSet6.DataSetName = "QLSVDBDataSet6";
+            this.qLSVDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // qLSVDBDataSet6BindingSource
+            // 
+            this.qLSVDBDataSet6BindingSource.DataSource = this.qLSVDBDataSet6;
+            this.qLSVDBDataSet6BindingSource.Position = 0;
+            // 
+            // stdBindingSource2
+            // 
+            this.stdBindingSource2.DataMember = "std";
+            this.stdBindingSource2.DataSource = this.qLSVDBDataSet6;
+            // 
+            // stdTableAdapter2
+            // 
+            this.stdTableAdapter2.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             // 
             // fnameDataGridViewTextBoxColumn
             // 
             this.fnameDataGridViewTextBoxColumn.DataPropertyName = "fname";
             this.fnameDataGridViewTextBoxColumn.HeaderText = "fname";
+            this.fnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.fnameDataGridViewTextBoxColumn.Name = "fnameDataGridViewTextBoxColumn";
             // 
             // lnameDataGridViewTextBoxColumn
             // 
             this.lnameDataGridViewTextBoxColumn.DataPropertyName = "lname";
             this.lnameDataGridViewTextBoxColumn.HeaderText = "lname";
+            this.lnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.lnameDataGridViewTextBoxColumn.Name = "lnameDataGridViewTextBoxColumn";
             // 
             // bdateDataGridViewTextBoxColumn
             // 
             this.bdateDataGridViewTextBoxColumn.DataPropertyName = "bdate";
             this.bdateDataGridViewTextBoxColumn.HeaderText = "bdate";
+            this.bdateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bdateDataGridViewTextBoxColumn.Name = "bdateDataGridViewTextBoxColumn";
             // 
             // emailDataGridViewTextBoxColumn
             // 
             this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
             this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             // 
             // genderDataGridViewTextBoxColumn
             // 
             this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
             this.genderDataGridViewTextBoxColumn.HeaderText = "gender";
+            this.genderDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
             // 
             // phoneDataGridViewTextBoxColumn
             // 
             this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
             this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
+            this.phoneDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
             // 
             // addressDataGridViewTextBoxColumn
             // 
             this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
             this.addressDataGridViewTextBoxColumn.HeaderText = "address";
+            this.addressDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
             // 
             // selectedCourseDataGridViewTextBoxColumn
             // 
             this.selectedCourseDataGridViewTextBoxColumn.DataPropertyName = "SelectedCourse";
             this.selectedCourseDataGridViewTextBoxColumn.HeaderText = "SelectedCourse";
+            this.selectedCourseDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.selectedCourseDataGridViewTextBoxColumn.Name = "selectedCourseDataGridViewTextBoxColumn";
             // 
             // pictureDataGridViewImageColumn
             // 
             this.pictureDataGridViewImageColumn.DataPropertyName = "picture";
             this.pictureDataGridViewImageColumn.HeaderText = "picture";
+            this.pictureDataGridViewImageColumn.MinimumWidth = 6;
             this.pictureDataGridViewImageColumn.Name = "pictureDataGridViewImageColumn";
+            // 
+            // btnsearchcourse
+            // 
+            this.btnsearchcourse.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnsearchcourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsearchcourse.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsearchcourse.Location = new System.Drawing.Point(846, 40);
+            this.btnsearchcourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnsearchcourse.Name = "btnsearchcourse";
+            this.btnsearchcourse.Size = new System.Drawing.Size(180, 55);
+            this.btnsearchcourse.TabIndex = 6;
+            this.btnsearchcourse.Text = "Search";
+            this.btnsearchcourse.UseVisualStyleBackColor = false;
+            this.btnsearchcourse.Click += new System.EventHandler(this.btnsearchcourse_Click);
             // 
             // CourseStudentList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 508);
+            this.ClientSize = new System.Drawing.Size(1424, 625);
+            this.Controls.Add(this.btnsearchcourse);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.txtnamecourse);
             this.Controls.Add(this.semesterlabel);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CourseStudentList";
             this.Text = "CourseStudentList";
             this.Load += new System.EventHandler(this.CourseStudentList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,6 +314,10 @@
         private QLSVDBDataSet5 qLSVDBDataSet5;
         private System.Windows.Forms.BindingSource stdBindingSource1;
         private QLSVDBDataSet5TableAdapters.stdTableAdapter stdTableAdapter1;
+        private QLSVDBDataSet6 qLSVDBDataSet6;
+        private System.Windows.Forms.BindingSource qLSVDBDataSet6BindingSource;
+        private System.Windows.Forms.BindingSource stdBindingSource2;
+        private QLSVDBDataSet6TableAdapters.stdTableAdapter stdTableAdapter2;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lnameDataGridViewTextBoxColumn;
@@ -268,5 +328,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn selectedCourseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn pictureDataGridViewImageColumn;
+        private System.Windows.Forms.Button btnsearchcourse;
     }
 }

@@ -48,6 +48,8 @@
             this.button_Add = new System.Windows.Forms.Button();
             this.PictureBoxStudentImage = new System.Windows.Forms.PictureBox();
             this.ButtonUploadImage = new System.Windows.Forms.Button();
+            this.TextBoxMail = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxStudentImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,10 +59,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(79, 45);
+            this.label1.Location = new System.Drawing.Point(76, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 24);
+            this.label1.Size = new System.Drawing.Size(89, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "StudentID:";
             // 
@@ -70,10 +72,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(68, 116);
+            this.label2.Location = new System.Drawing.Point(65, 76);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 24);
+            this.label2.Size = new System.Drawing.Size(98, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "First Name:";
             // 
@@ -83,10 +85,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(71, 185);
+            this.label3.Location = new System.Drawing.Point(68, 131);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 24);
+            this.label3.Size = new System.Drawing.Size(95, 28);
             this.label3.TabIndex = 2;
             this.label3.Text = "Last Name:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -97,10 +99,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(86, 254);
+            this.label4.Location = new System.Drawing.Point(82, 189);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 24);
+            this.label4.Size = new System.Drawing.Size(88, 28);
             this.label4.TabIndex = 3;
             this.label4.Text = "BirthDate:";
             // 
@@ -110,10 +112,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(105, 330);
+            this.label5.Location = new System.Drawing.Point(95, 287);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 24);
+            this.label5.Size = new System.Drawing.Size(71, 28);
             this.label5.TabIndex = 4;
             this.label5.Text = "Gender:";
             // 
@@ -123,10 +125,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(110, 386);
+            this.label6.Location = new System.Drawing.Point(105, 342);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 24);
+            this.label6.Size = new System.Drawing.Size(63, 28);
             this.label6.TabIndex = 5;
             this.label6.Text = "Phone:";
             // 
@@ -136,10 +138,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(98, 458);
+            this.label7.Location = new System.Drawing.Point(93, 406);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 24);
+            this.label7.Size = new System.Drawing.Size(80, 28);
             this.label7.TabIndex = 6;
             this.label7.Text = "Address:";
             // 
@@ -149,57 +151,57 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(105, 521);
+            this.label8.Location = new System.Drawing.Point(98, 466);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 24);
+            this.label8.Size = new System.Drawing.Size(72, 28);
             this.label8.TabIndex = 7;
             this.label8.Text = "Picture:";
             // 
             // TextBoxID
             // 
             this.TextBoxID.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxID.Location = new System.Drawing.Point(253, 48);
+            this.TextBoxID.Location = new System.Drawing.Point(250, 28);
             this.TextBoxID.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxID.Name = "TextBoxID";
-            this.TextBoxID.Size = new System.Drawing.Size(345, 27);
+            this.TextBoxID.Size = new System.Drawing.Size(345, 31);
             this.TextBoxID.TabIndex = 8;
             // 
             // TextBoxFirstName
             // 
             this.TextBoxFirstName.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxFirstName.Location = new System.Drawing.Point(253, 119);
+            this.TextBoxFirstName.Location = new System.Drawing.Point(250, 79);
             this.TextBoxFirstName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxFirstName.Name = "TextBoxFirstName";
-            this.TextBoxFirstName.Size = new System.Drawing.Size(345, 27);
+            this.TextBoxFirstName.Size = new System.Drawing.Size(345, 31);
             this.TextBoxFirstName.TabIndex = 9;
             // 
             // TextBoxLastName
             // 
             this.TextBoxLastName.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxLastName.Location = new System.Drawing.Point(253, 188);
+            this.TextBoxLastName.Location = new System.Drawing.Point(250, 134);
             this.TextBoxLastName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxLastName.Name = "TextBoxLastName";
-            this.TextBoxLastName.Size = new System.Drawing.Size(345, 27);
+            this.TextBoxLastName.Size = new System.Drawing.Size(345, 31);
             this.TextBoxLastName.TabIndex = 10;
             // 
             // TextBoxPhone
             // 
             this.TextBoxPhone.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxPhone.Location = new System.Drawing.Point(254, 386);
+            this.TextBoxPhone.Location = new System.Drawing.Point(249, 342);
             this.TextBoxPhone.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxPhone.Name = "TextBoxPhone";
-            this.TextBoxPhone.Size = new System.Drawing.Size(345, 27);
+            this.TextBoxPhone.Size = new System.Drawing.Size(345, 31);
             this.TextBoxPhone.TabIndex = 11;
             this.TextBoxPhone.TextChanged += new System.EventHandler(this.TextBoxPhone_TextChanged);
             // 
             // TextBoxAddress
             // 
             this.TextBoxAddress.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxAddress.Location = new System.Drawing.Point(254, 458);
+            this.TextBoxAddress.Location = new System.Drawing.Point(249, 406);
             this.TextBoxAddress.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxAddress.Name = "TextBoxAddress";
-            this.TextBoxAddress.Size = new System.Drawing.Size(345, 27);
+            this.TextBoxAddress.Size = new System.Drawing.Size(345, 31);
             this.TextBoxAddress.TabIndex = 12;
             // 
             // dateTimePicker1
@@ -208,10 +210,10 @@
             this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(254, 254);
+            this.dateTimePicker1.Location = new System.Drawing.Point(250, 189);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(344, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(344, 31);
             this.dateTimePicker1.TabIndex = 13;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -220,10 +222,10 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton1.Location = new System.Drawing.Point(284, 330);
+            this.radioButton1.Location = new System.Drawing.Point(274, 287);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(55, 28);
+            this.radioButton1.Size = new System.Drawing.Size(67, 32);
             this.radioButton1.TabIndex = 14;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
@@ -234,10 +236,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton2.Location = new System.Drawing.Point(471, 330);
+            this.radioButton2.Location = new System.Drawing.Point(461, 287);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 28);
+            this.radioButton2.Size = new System.Drawing.Size(85, 32);
             this.radioButton2.TabIndex = 15;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
@@ -249,7 +251,7 @@
             this.button_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Cancel.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Cancel.ForeColor = System.Drawing.Color.Black;
-            this.button_Cancel.Location = new System.Drawing.Point(198, 742);
+            this.button_Cancel.Location = new System.Drawing.Point(184, 682);
             this.button_Cancel.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button_Cancel.Name = "button_Cancel";
             this.button_Cancel.Size = new System.Drawing.Size(153, 42);
@@ -263,7 +265,7 @@
             this.button_Add.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Add.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Add.Location = new System.Drawing.Point(487, 742);
+            this.button_Add.Location = new System.Drawing.Point(473, 682);
             this.button_Add.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button_Add.Name = "button_Add";
             this.button_Add.Size = new System.Drawing.Size(153, 42);
@@ -275,7 +277,7 @@
             // PictureBoxStudentImage
             // 
             this.PictureBoxStudentImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.PictureBoxStudentImage.Location = new System.Drawing.Point(254, 521);
+            this.PictureBoxStudentImage.Location = new System.Drawing.Point(247, 466);
             this.PictureBoxStudentImage.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.PictureBoxStudentImage.Name = "PictureBoxStudentImage";
             this.PictureBoxStudentImage.Size = new System.Drawing.Size(347, 142);
@@ -286,7 +288,7 @@
             // ButtonUploadImage
             // 
             this.ButtonUploadImage.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUploadImage.Location = new System.Drawing.Point(308, 671);
+            this.ButtonUploadImage.Location = new System.Drawing.Point(301, 616);
             this.ButtonUploadImage.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.ButtonUploadImage.Name = "ButtonUploadImage";
             this.ButtonUploadImage.Size = new System.Drawing.Size(225, 43);
@@ -295,12 +297,36 @@
             this.ButtonUploadImage.UseVisualStyleBackColor = true;
             this.ButtonUploadImage.Click += new System.EventHandler(this.ButtonUploadImage_Click);
             // 
+            // TextBoxMail
+            // 
+            this.TextBoxMail.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxMail.Location = new System.Drawing.Point(250, 245);
+            this.TextBoxMail.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.TextBoxMail.Name = "TextBoxMail";
+            this.TextBoxMail.Size = new System.Drawing.Size(345, 31);
+            this.TextBoxMail.TabIndex = 22;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(108, 245);
+            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 28);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Email : ";
+            // 
             // AddStudentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(733, 829);
+            this.ClientSize = new System.Drawing.Size(733, 748);
+            this.Controls.Add(this.TextBoxMail);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.ButtonUploadImage);
             this.Controls.Add(this.PictureBoxStudentImage);
             this.Controls.Add(this.button_Add);
@@ -354,5 +380,7 @@
         private System.Windows.Forms.Button button_Add;
         private System.Windows.Forms.PictureBox PictureBoxStudentImage;
         private System.Windows.Forms.Button ButtonUploadImage;
+        private System.Windows.Forms.TextBox TextBoxMail;
+        private System.Windows.Forms.Label label9;
     }
 }

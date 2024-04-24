@@ -103,5 +103,22 @@ namespace ListAndEditForm1
            RemoveScore removescore = new RemoveScore();
             removescore.Show(this);
         }
+
+        private void manageScoreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageScoreForm manageScoreForm = new ManageScoreForm();
+            manageScoreForm.Show(this);
+        }
+
+        private void avgScoreByToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            avgScoreByCourseForm avgScoreBy = new avgScoreByCourseForm();   
+            avgScoreBy.Show(this);  
+        }
+
+        private void aVGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -179,3 +179,5 @@ C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\
 C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.CoreCompileInputs.cache
 C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.exe
 C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.pdb
+C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Score.ManageScoreForm.resources
+C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Score.avgScoreByCourseForm.resources

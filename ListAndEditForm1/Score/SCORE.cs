@@ -52,7 +52,7 @@ namespace ListAndEditForm1.Score
         {
             SqlCommand command = new SqlCommand();
             command.Connection = mydb.getConnection;
-            command.CommandText = "SELECT Course. label, AVG(score. student_score) As AverageGrade FROM Course, score WHERE Course. Id =" + " score.course_id GROUP BY Course.label";
+            command.CommandText = "SELECT Course. label, AVG(score. student_score) As AverageGrade FROM Course, score WHERE Course.Id =" + " score.course_id GROUP BY Course.label";
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -83,6 +83,19 @@ namespace ListAndEditForm1.Score
 
             command.Connection = mydb.getConnection;
             command.CommandText = ("SELECT score.student_id, std.fname, std.lname, score.course_id, Course.label, score." + "student_score FROM std INNER JOIN score on std.id = score.student_id INNER JOIN Course on score.course_id = Course.Id");
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
+        public DataTable avgScoreByCourse()
+        {
+
+            SqlCommand command = new SqlCommand();
+
+            command.Connection = mydb.getConnection;
+            command.CommandText = ("SELECT Course.label, avg(score.student_score) as 'Average Score' FROM Course, score WHERE course.Id = score.course_id GROUP BY Course.label");
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);

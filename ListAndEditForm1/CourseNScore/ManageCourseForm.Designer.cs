@@ -54,10 +54,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(105, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(140, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 26);
+            this.label1.Size = new System.Drawing.Size(43, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID :";
             // 
@@ -65,10 +64,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(83, 83);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(111, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 26);
+            this.label2.Size = new System.Drawing.Size(78, 35);
             this.label2.TabIndex = 1;
             this.label2.Text = "Label : ";
             // 
@@ -76,10 +74,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 136);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(24, 167);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 26);
+            this.label3.Size = new System.Drawing.Size(159, 35);
             this.label3.TabIndex = 3;
             this.label3.Text = "Hours Number :";
             // 
@@ -87,61 +84,60 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(40, 238);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(53, 293);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 26);
+            this.label4.Size = new System.Drawing.Size(136, 35);
             this.label4.TabIndex = 2;
             this.label4.Text = "Description : ";
             // 
             // TextBoxID
             // 
             this.TextBoxID.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxID.Location = new System.Drawing.Point(152, 34);
-            this.TextBoxID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextBoxID.Location = new System.Drawing.Point(203, 42);
+            this.TextBoxID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxID.Multiline = true;
             this.TextBoxID.Name = "TextBoxID";
-            this.TextBoxID.Size = new System.Drawing.Size(222, 28);
+            this.TextBoxID.Size = new System.Drawing.Size(295, 34);
             this.TextBoxID.TabIndex = 4;
             // 
             // TextBoxCourseName
             // 
             this.TextBoxCourseName.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxCourseName.Location = new System.Drawing.Point(152, 83);
-            this.TextBoxCourseName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextBoxCourseName.Location = new System.Drawing.Point(203, 102);
+            this.TextBoxCourseName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxCourseName.Multiline = true;
             this.TextBoxCourseName.Name = "TextBoxCourseName";
-            this.TextBoxCourseName.Size = new System.Drawing.Size(222, 28);
+            this.TextBoxCourseName.Size = new System.Drawing.Size(295, 34);
             this.TextBoxCourseName.TabIndex = 5;
             // 
             // TextBoxDescription
             // 
             this.TextBoxDescription.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxDescription.Location = new System.Drawing.Point(152, 248);
-            this.TextBoxDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextBoxDescription.Location = new System.Drawing.Point(203, 305);
+            this.TextBoxDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBoxDescription.Multiline = true;
             this.TextBoxDescription.Name = "TextBoxDescription";
-            this.TextBoxDescription.Size = new System.Drawing.Size(222, 108);
+            this.TextBoxDescription.Size = new System.Drawing.Size(295, 132);
             this.TextBoxDescription.TabIndex = 6;
             // 
             // NumericUpDownHours
             // 
             this.NumericUpDownHours.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumericUpDownHours.Location = new System.Drawing.Point(152, 143);
-            this.NumericUpDownHours.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NumericUpDownHours.Location = new System.Drawing.Point(203, 176);
+            this.NumericUpDownHours.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NumericUpDownHours.Name = "NumericUpDownHours";
-            this.NumericUpDownHours.Size = new System.Drawing.Size(220, 30);
+            this.NumericUpDownHours.Size = new System.Drawing.Size(293, 35);
             this.NumericUpDownHours.TabIndex = 7;
             // 
             // ListBoxCourses
             // 
             this.ListBoxCourses.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListBoxCourses.FormattingEnabled = true;
-            this.ListBoxCourses.ItemHeight = 22;
-            this.ListBoxCourses.Location = new System.Drawing.Point(486, 45);
-            this.ListBoxCourses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ListBoxCourses.ItemHeight = 28;
+            this.ListBoxCourses.Location = new System.Drawing.Point(648, 55);
+            this.ListBoxCourses.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ListBoxCourses.Name = "ListBoxCourses";
-            this.ListBoxCourses.Size = new System.Drawing.Size(341, 356);
+            this.ListBoxCourses.Size = new System.Drawing.Size(453, 424);
             this.ListBoxCourses.TabIndex = 8;
             this.ListBoxCourses.Click += new System.EventHandler(this.ListBoxCourses_Click);
             this.ListBoxCourses.SelectedIndexChanged += new System.EventHandler(this.ListBoxCourses_SelectedIndexChanged);
@@ -153,10 +149,10 @@
             this.ButtonFirst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonFirst.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonFirst.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtonFirst.Location = new System.Drawing.Point(40, 398);
-            this.ButtonFirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonFirst.Location = new System.Drawing.Point(53, 490);
+            this.ButtonFirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonFirst.Name = "ButtonFirst";
-            this.ButtonFirst.Size = new System.Drawing.Size(91, 33);
+            this.ButtonFirst.Size = new System.Drawing.Size(121, 41);
             this.ButtonFirst.TabIndex = 9;
             this.ButtonFirst.Text = "First";
             this.ButtonFirst.UseVisualStyleBackColor = false;
@@ -168,10 +164,10 @@
             this.ButtonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonNext.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonNext.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtonNext.Location = new System.Drawing.Point(152, 398);
-            this.ButtonNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonNext.Location = new System.Drawing.Point(203, 490);
+            this.ButtonNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonNext.Name = "ButtonNext";
-            this.ButtonNext.Size = new System.Drawing.Size(91, 33);
+            this.ButtonNext.Size = new System.Drawing.Size(121, 41);
             this.ButtonNext.TabIndex = 10;
             this.ButtonNext.Text = "Next";
             this.ButtonNext.UseVisualStyleBackColor = false;
@@ -183,10 +179,10 @@
             this.ButtonPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonPrevious.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonPrevious.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtonPrevious.Location = new System.Drawing.Point(264, 398);
-            this.ButtonPrevious.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonPrevious.Location = new System.Drawing.Point(352, 490);
+            this.ButtonPrevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonPrevious.Name = "ButtonPrevious";
-            this.ButtonPrevious.Size = new System.Drawing.Size(91, 33);
+            this.ButtonPrevious.Size = new System.Drawing.Size(121, 41);
             this.ButtonPrevious.TabIndex = 11;
             this.ButtonPrevious.Text = "Previous";
             this.ButtonPrevious.UseVisualStyleBackColor = false;
@@ -198,10 +194,10 @@
             this.ButtonLast.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonLast.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLast.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtonLast.Location = new System.Drawing.Point(370, 398);
-            this.ButtonLast.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonLast.Location = new System.Drawing.Point(493, 490);
+            this.ButtonLast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonLast.Name = "ButtonLast";
-            this.ButtonLast.Size = new System.Drawing.Size(91, 33);
+            this.ButtonLast.Size = new System.Drawing.Size(121, 41);
             this.ButtonLast.TabIndex = 12;
             this.ButtonLast.Text = "Last";
             this.ButtonLast.UseVisualStyleBackColor = false;
@@ -213,10 +209,10 @@
             this.ButtonRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonRemove.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonRemove.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtonRemove.Location = new System.Drawing.Point(343, 473);
-            this.ButtonRemove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonRemove.Location = new System.Drawing.Point(457, 582);
+            this.ButtonRemove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonRemove.Name = "ButtonRemove";
-            this.ButtonRemove.Size = new System.Drawing.Size(91, 33);
+            this.ButtonRemove.Size = new System.Drawing.Size(121, 41);
             this.ButtonRemove.TabIndex = 15;
             this.ButtonRemove.Text = "Remove";
             this.ButtonRemove.UseVisualStyleBackColor = false;
@@ -228,10 +224,10 @@
             this.ButtonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonEdit.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtonEdit.Location = new System.Drawing.Point(216, 473);
-            this.ButtonEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonEdit.Location = new System.Drawing.Point(288, 582);
+            this.ButtonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonEdit.Name = "ButtonEdit";
-            this.ButtonEdit.Size = new System.Drawing.Size(91, 33);
+            this.ButtonEdit.Size = new System.Drawing.Size(121, 41);
             this.ButtonEdit.TabIndex = 14;
             this.ButtonEdit.Text = "Edit";
             this.ButtonEdit.UseVisualStyleBackColor = false;
@@ -243,10 +239,10 @@
             this.ButtonAddCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAddCourse.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonAddCourse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtonAddCourse.Location = new System.Drawing.Point(89, 473);
-            this.ButtonAddCourse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonAddCourse.Location = new System.Drawing.Point(119, 582);
+            this.ButtonAddCourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonAddCourse.Name = "ButtonAddCourse";
-            this.ButtonAddCourse.Size = new System.Drawing.Size(91, 33);
+            this.ButtonAddCourse.Size = new System.Drawing.Size(121, 41);
             this.ButtonAddCourse.TabIndex = 13;
             this.ButtonAddCourse.Text = "Add";
             this.ButtonAddCourse.UseVisualStyleBackColor = false;
@@ -256,10 +252,9 @@
             // 
             this.LabelTotalCourses.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.LabelTotalCourses.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTotalCourses.Location = new System.Drawing.Point(643, 424);
-            this.LabelTotalCourses.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelTotalCourses.Location = new System.Drawing.Point(857, 522);
             this.LabelTotalCourses.Name = "LabelTotalCourses";
-            this.LabelTotalCourses.Size = new System.Drawing.Size(182, 43);
+            this.LabelTotalCourses.Size = new System.Drawing.Size(243, 53);
             this.LabelTotalCourses.TabIndex = 16;
             this.LabelTotalCourses.Text = "Total Courses : ";
             this.LabelTotalCourses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -269,28 +264,32 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(51, 190);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(68, 234);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 26);
+            this.label5.Size = new System.Drawing.Size(115, 35);
             this.label5.TabIndex = 17;
             this.label5.Text = "Semester :";
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(147, 200);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Items.AddRange(new object[] {
+            "1\t",
+            "2",
+            "3"});
+            this.comboBox1.Location = new System.Drawing.Point(203, 236);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(226, 21);
+            this.comboBox1.Size = new System.Drawing.Size(293, 36);
             this.comboBox1.TabIndex = 18;
             // 
             // ManageCourseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(853, 546);
+            this.ClientSize = new System.Drawing.Size(1137, 672);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.LabelTotalCourses);
@@ -310,7 +309,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ManageCourseForm";
             this.Text = "ManageCourseForm";
             this.Load += new System.EventHandler(this.ManageCourseForm_Load);

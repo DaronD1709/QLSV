@@ -60,10 +60,12 @@ namespace ListAndEditForm1.Score
         }
 
 
-        public bool deletescore(int studentID)
+        public bool deletescore(int studentID, int courseID)
         {
-            SqlCommand command = new SqlCommand("DELETE FROM score WHERE student_id = @sid ", mydb.getConnection);
+            SqlCommand command = new SqlCommand("DELETE FROM score WHERE student_id = @sid AND course_id = @cid", mydb.getConnection);
             command.Parameters.Add("@sid", SqlDbType.Int).Value = studentID;
+            command.Parameters.Add("@cid", SqlDbType.Int).Value = courseID;
+
             mydb.openConnection();
             if (command.ExecuteNonQuery() == 1)
             {
@@ -80,7 +82,7 @@ namespace ListAndEditForm1.Score
             SqlCommand command = new SqlCommand();
 
             command.Connection = mydb.getConnection;
-            command.CommandText = ("SELECT Score.student_id, std.fname, std.lname, Scoure.course_id, COURSE.label, Score." + "student_score FROM std INNER JOIN score on std.id = score.student_id INNER JOIN course on score.course_id = Course.Id");
+            command.CommandText = ("SELECT score.student_id, std.fname, std.lname, score.course_id, Course.label, score." + "student_score FROM std INNER JOIN score on std.id = score.student_id INNER JOIN Course on score.course_id = Course.Id");
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);

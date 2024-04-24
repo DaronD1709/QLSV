@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,9 +35,11 @@ namespace ListAndEditForm1.Score
             SCORE score = new SCORE();
             try
             {
-                int n = dataGridView1.SelectedRows.Count;
+                int studentID = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                int courseID = int.Parse(dataGridView1.CurrentRow.Cells[3].Value.ToString());
+
                 MessageBox.Show("Are you sure you want to Delete This Course", "Remove Score", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (score.deletescore(n))
+                if (score.deletescore(studentID, courseID))
                 {
                     MessageBox.Show("Score Deleted", "Remove Score", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -58,9 +61,17 @@ namespace ListAndEditForm1.Score
 
         private void RemoveScore_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qLSVDBDataSet2.score' table. You can move, or remove it, as needed.
-            this.scoreTableAdapter.Fill(this.qLSVDBDataSet2.score);
+            dataGridView1.DataSource = score.getStudentScore();
 
+        }
+
+        private void btnref_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("SELECT * FROM score");
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowTemplate.Height = 80;
+            dataGridView1.DataSource = score.getStudentScore();
+            dataGridView1.AllowUserToAddRows = false;
         }
     }
 }

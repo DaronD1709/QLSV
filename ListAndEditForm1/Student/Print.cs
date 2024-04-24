@@ -52,7 +52,7 @@ namespace ListAndEditForm1
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
             dataGridView1.RowTemplate.Height = 80;
             dataGridView1.DataSource = student.getStudents(command);
-            picCol = (DataGridViewImageColumn)dataGridView1.Columns[7];
+            picCol = (DataGridViewImageColumn)dataGridView1.Columns[9];
             picCol.ImageLayout = DataGridViewImageCellLayout.Stretch;
             dataGridView1.AllowUserToAddRows = false;
         }

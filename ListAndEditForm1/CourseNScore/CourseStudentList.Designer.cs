@@ -37,14 +37,6 @@
             this.btnprint = new System.Windows.Forms.Button();
             this.stdTableAdapter = new ListAndEditForm1.QLSVDBDataSet3TableAdapters.stdTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.stdBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.qLSVDBDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qLSVDBDataSet5 = new ListAndEditForm1.QLSVDBDataSet5();
-            this.stdTableAdapter1 = new ListAndEditForm1.QLSVDBDataSet5TableAdapters.stdTableAdapter();
-            this.qLSVDBDataSet6 = new ListAndEditForm1.QLSVDBDataSet6();
-            this.qLSVDBDataSet6BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.stdBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.stdTableAdapter2 = new ListAndEditForm1.QLSVDBDataSet6TableAdapters.stdTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,16 +47,24 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.selectedCourseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.stdBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet6 = new ListAndEditForm1.QLSVDBDataSet6();
+            this.stdBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet5 = new ListAndEditForm1.QLSVDBDataSet5();
+            this.stdTableAdapter1 = new ListAndEditForm1.QLSVDBDataSet5TableAdapters.stdTableAdapter();
+            this.qLSVDBDataSet6BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stdTableAdapter2 = new ListAndEditForm1.QLSVDBDataSet6TableAdapters.stdTableAdapter();
             this.btnsearchcourse = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -143,49 +143,11 @@
             this.pictureDataGridViewImageColumn});
             this.dataGridView1.DataSource = this.stdBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(61, 127);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1310, 391);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // stdBindingSource1
-            // 
-            this.stdBindingSource1.DataMember = "std";
-            this.stdBindingSource1.DataSource = this.qLSVDBDataSet5BindingSource;
-            // 
-            // qLSVDBDataSet5BindingSource
-            // 
-            this.qLSVDBDataSet5BindingSource.DataSource = this.qLSVDBDataSet5;
-            this.qLSVDBDataSet5BindingSource.Position = 0;
-            // 
-            // qLSVDBDataSet5
-            // 
-            this.qLSVDBDataSet5.DataSetName = "QLSVDBDataSet5";
-            this.qLSVDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // stdTableAdapter1
-            // 
-            this.stdTableAdapter1.ClearBeforeFill = true;
-            // 
-            // qLSVDBDataSet6
-            // 
-            this.qLSVDBDataSet6.DataSetName = "QLSVDBDataSet6";
-            this.qLSVDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // qLSVDBDataSet6BindingSource
-            // 
-            this.qLSVDBDataSet6BindingSource.DataSource = this.qLSVDBDataSet6;
-            this.qLSVDBDataSet6BindingSource.Position = 0;
-            // 
-            // stdBindingSource2
-            // 
-            this.stdBindingSource2.DataMember = "std";
-            this.stdBindingSource2.DataSource = this.qLSVDBDataSet6;
-            // 
-            // stdTableAdapter2
-            // 
-            this.stdTableAdapter2.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -257,6 +219,44 @@
             this.pictureDataGridViewImageColumn.MinimumWidth = 6;
             this.pictureDataGridViewImageColumn.Name = "pictureDataGridViewImageColumn";
             // 
+            // stdBindingSource2
+            // 
+            this.stdBindingSource2.DataMember = "std";
+            this.stdBindingSource2.DataSource = this.qLSVDBDataSet6;
+            // 
+            // qLSVDBDataSet6
+            // 
+            this.qLSVDBDataSet6.DataSetName = "QLSVDBDataSet6";
+            this.qLSVDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // stdBindingSource1
+            // 
+            this.stdBindingSource1.DataMember = "std";
+            this.stdBindingSource1.DataSource = this.qLSVDBDataSet5BindingSource;
+            // 
+            // qLSVDBDataSet5BindingSource
+            // 
+            this.qLSVDBDataSet5BindingSource.DataSource = this.qLSVDBDataSet5;
+            this.qLSVDBDataSet5BindingSource.Position = 0;
+            // 
+            // qLSVDBDataSet5
+            // 
+            this.qLSVDBDataSet5.DataSetName = "QLSVDBDataSet5";
+            this.qLSVDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // stdTableAdapter1
+            // 
+            this.stdTableAdapter1.ClearBeforeFill = true;
+            // 
+            // qLSVDBDataSet6BindingSource
+            // 
+            this.qLSVDBDataSet6BindingSource.DataSource = this.qLSVDBDataSet6;
+            this.qLSVDBDataSet6BindingSource.Position = 0;
+            // 
+            // stdTableAdapter2
+            // 
+            this.stdTableAdapter2.ClearBeforeFill = true;
+            // 
             // btnsearchcourse
             // 
             this.btnsearchcourse.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -289,12 +289,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet6BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,7 +309,6 @@
         private QLSVDBDataSet3 qLSVDBDataSet3;
         private System.Windows.Forms.BindingSource stdBindingSource;
         private QLSVDBDataSet3TableAdapters.stdTableAdapter stdTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource qLSVDBDataSet5BindingSource;
         private QLSVDBDataSet5 qLSVDBDataSet5;
         private System.Windows.Forms.BindingSource stdBindingSource1;
@@ -329,5 +328,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn selectedCourseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn pictureDataGridViewImageColumn;
         private System.Windows.Forms.Button btnsearchcourse;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -99,7 +99,7 @@ namespace ListAndEditForm1.CourseNScore
             if (printDlg.ShowDialog() == DialogResult.OK) printDoc.Print();
         }
 
-        private void fillGrid(SqlCommand command)
+        public void fillGrid(SqlCommand command)
         {
 
             dataGridView1.ReadOnly = true;

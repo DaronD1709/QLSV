@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace ListAndEditForm1.CourseNScore
 {
@@ -21,7 +23,7 @@ namespace ListAndEditForm1.CourseNScore
         int pos;
         MY_DB mydb = new MY_DB();
         public static string x;
-
+        Student student = new Student();
         private void ManageCourseForm_Load(object sender, EventArgs e)
         {
             reloadListBoxData();
@@ -189,14 +191,44 @@ namespace ListAndEditForm1.CourseNScore
         {
 
         }
+        CourseStudentList list = new CourseStudentList();
+        private void fillGrid(SqlCommand command)
+        {
+           
+            list.dataGridView1.ReadOnly = true;
+            DataGridViewImageColumn picCol = new DataGridViewImageColumn();
+            list.dataGridView1.RowTemplate.Height = 80;
+            list.dataGridView1.DataSource = student.getStudents(command);
+            picCol = (DataGridViewImageColumn)list.dataGridView1.Columns[9];
+            picCol.ImageLayout = DataGridViewImageCellLayout.Stretch;
+            list.dataGridView1.AllowUserToAddRows = false;
+            // Dem sinh vien 
+
+        }
 
         private void ListBoxCourses_DoubleClick(object sender, EventArgs e)
         {
-            int courseId = Convert.ToInt32(ListBoxCourses.SelectedValue);
-            CourseStudentList coursestudentlist = new CourseStudentList();
-            // Gọi phương thức từ form "CourseStudentList" để hiển thị dữ liệu sinh viên
-            coursestudentlist.DisplayStudents(courseId);
-            coursestudentlist.Show();
+            // Lấy giá trị của mục đã chọn trong ListBox.
+            string selectedCourse = ListBoxCourses.SelectedItem.ToString();
+
+            SqlCommand command = new SqlCommand("SELECT * FROM std WHERE CONCAT(id,fname,lname,address,SelectedCourse) LIKE '%" + selectedCourse + "%'");
+            fillGrid(command);
+
+            // Kiểm tra xem CourseStudentList đã hiển thị hay chưa
+            CourseStudentList coursestudentlist = Application.OpenForms.OfType<CourseStudentList>().FirstOrDefault();
+            if (coursestudentlist != null)
+            {
+                // Nếu đã hiển thị, cập nhật dữ liệu của nó
+                coursestudentlist.fillGrid(command);
+            }
+            else
+            {
+                // Nếu chưa hiển thị, hiển thị thể hiện mới
+                coursestudentlist = new CourseStudentList();
+                coursestudentlist.fillGrid(command);
+                coursestudentlist.Show();
+            }
+
         }
     }
 }

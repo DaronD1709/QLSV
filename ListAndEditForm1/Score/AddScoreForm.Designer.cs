@@ -41,17 +41,17 @@
             this.qLSVDBDataSet = new ListAndEditForm1.QLSVDBDataSet();
             this.qLSVDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.qLSVDBDataSet1 = new ListAndEditForm1.QLSVDBDataSet1();
-            this.stdBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.stdTableAdapter = new ListAndEditForm1.QLSVDBDataSet1TableAdapters.stdTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stdBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet1 = new ListAndEditForm1.QLSVDBDataSet1();
+            this.stdTableAdapter = new ListAndEditForm1.QLSVDBDataSet1TableAdapters.stdTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -96,6 +96,7 @@
             // 
             // textboxid
             // 
+            this.textboxid.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxid.Location = new System.Drawing.Point(244, 64);
             this.textboxid.Multiline = true;
             this.textboxid.Name = "textboxid";
@@ -104,6 +105,7 @@
             // 
             // textboxscore
             // 
+            this.textboxscore.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxscore.Location = new System.Drawing.Point(244, 238);
             this.textboxscore.Multiline = true;
             this.textboxscore.Name = "textboxscore";
@@ -112,6 +114,7 @@
             // 
             // textboxdescription
             // 
+            this.textboxdescription.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxdescription.Location = new System.Drawing.Point(244, 335);
             this.textboxdescription.Multiline = true;
             this.textboxdescription.Name = "textboxdescription";
@@ -157,6 +160,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -167,22 +171,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(429, 504);
+            this.dataGridView1.Size = new System.Drawing.Size(589, 504);
             this.dataGridView1.TabIndex = 9;
-            // 
-            // qLSVDBDataSet1
-            // 
-            this.qLSVDBDataSet1.DataSetName = "QLSVDBDataSet1";
-            this.qLSVDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // stdBindingSource
-            // 
-            this.stdBindingSource.DataMember = "std";
-            this.stdBindingSource.DataSource = this.qLSVDBDataSet1;
-            // 
-            // stdTableAdapter
-            // 
-            this.stdTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -190,7 +180,6 @@
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
             this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 125;
             // 
             // fnameDataGridViewTextBoxColumn
             // 
@@ -198,7 +187,6 @@
             this.fnameDataGridViewTextBoxColumn.HeaderText = "fname";
             this.fnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.fnameDataGridViewTextBoxColumn.Name = "fnameDataGridViewTextBoxColumn";
-            this.fnameDataGridViewTextBoxColumn.Width = 125;
             // 
             // lnameDataGridViewTextBoxColumn
             // 
@@ -206,13 +194,26 @@
             this.lnameDataGridViewTextBoxColumn.HeaderText = "lname";
             this.lnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.lnameDataGridViewTextBoxColumn.Name = "lnameDataGridViewTextBoxColumn";
-            this.lnameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // stdBindingSource
+            // 
+            this.stdBindingSource.DataMember = "std";
+            this.stdBindingSource.DataSource = this.qLSVDBDataSet1;
+            // 
+            // qLSVDBDataSet1
+            // 
+            this.qLSVDBDataSet1.DataSetName = "QLSVDBDataSet1";
+            this.qLSVDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // stdTableAdapter
+            // 
+            this.stdTableAdapter.ClearBeforeFill = true;
             // 
             // AddScoreForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1105, 600);
+            this.ClientSize = new System.Drawing.Size(1238, 600);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
@@ -229,8 +230,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

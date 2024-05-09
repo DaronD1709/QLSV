@@ -105,6 +105,7 @@
             this.linkLabel2.TabIndex = 3;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Refresh";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -413,7 +414,7 @@
             // lb_Name
             // 
             this.lb_Name.AutoSize = true;
-            this.lb_Name.Font = new System.Drawing.Font("Agency FB", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Name.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Name.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lb_Name.Location = new System.Drawing.Point(326, 21);
             this.lb_Name.Name = "lb_Name";

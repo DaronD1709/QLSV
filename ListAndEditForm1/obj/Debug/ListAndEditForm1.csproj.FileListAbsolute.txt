@@ -186,3 +186,5 @@ C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\
 C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Human_Resource.UserInfo.resources
 C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Human_Resource.AddContact.resources
 C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Result.AVGResult.resources
+C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Result.StaticResult.resources
+C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Admin.AccountManage.resources

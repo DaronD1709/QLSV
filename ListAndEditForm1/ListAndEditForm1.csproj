@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AccountManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AccountManage.Designer.cs">
+      <DependentUpon>AccountManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="CourseNScore\AddCourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,7 @@
       <DependentUpon>AddContact.cs</DependentUpon>
     </Compile>
     <Compile Include="Human Resource\Contact.cs" />
+    <Compile Include="Human Resource\Group.cs" />
     <Compile Include="Human Resource\HumanResourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +167,12 @@
     </Compile>
     <Compile Include="Result\AVGResult.Designer.cs">
       <DependentUpon>AVGResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result\StaticResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result\StaticResult.Designer.cs">
+      <DependentUpon>StaticResult.cs</DependentUpon>
     </Compile>
     <Compile Include="Result\StudentResult.cs" />
     <Compile Include="Score\AddScoreForm.cs">
@@ -248,6 +261,9 @@
     <Compile Include="Student\UpdateDeleteStudentForm.Designer.cs">
       <DependentUpon>UpdateDeleteStudentForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\AccountManage.resx">
+      <DependentUpon>AccountManage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CourseNScore\AddCourseForm.resx">
       <DependentUpon>AddCourseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Result\AVGResult.resx">
       <DependentUpon>AVGResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result\StaticResult.resx">
+      <DependentUpon>StaticResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Score\AddScoreForm.resx">
       <DependentUpon>AddScoreForm.cs</DependentUpon>
@@ -474,8 +493,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Admin\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

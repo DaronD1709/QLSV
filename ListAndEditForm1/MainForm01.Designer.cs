@@ -252,6 +252,7 @@
             this.staticResultToolStripMenuItem.Name = "staticResultToolStripMenuItem";
             this.staticResultToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.staticResultToolStripMenuItem.Text = "Statics Result";
+            this.staticResultToolStripMenuItem.Click += new System.EventHandler(this.staticResultToolStripMenuItem_Click);
             // 
             // aDMINToolStripMenuItem
             // 

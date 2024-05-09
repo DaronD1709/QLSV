@@ -18,7 +18,6 @@ namespace ListAndEditForm1.Human_Resource
         private string lname;
         private string username;
         private string password;
-        private string email;
         private MemoryStream picture = new MemoryStream();
         public string ID
         { get { return id; } set { id = value; } }
@@ -30,8 +29,6 @@ namespace ListAndEditForm1.Human_Resource
         { get { return username; } set { username = value; } }
         public string Password
         { get { return password; } set { password = value; } }
-        public string Email
-        { get { return email; } set { email = value; } }
         public MemoryStream Picture
         { get { return picture; } set { picture = value; } }
         public DataTable getUser(SqlCommand command)
@@ -44,7 +41,7 @@ namespace ListAndEditForm1.Human_Resource
         }
         public bool insertUser(int Id, string fname, string lname, string username, string pass, MemoryStream picture)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO loginhuman (Id, f_name, l_name, uname, pwd, fig)" +
+            SqlCommand command = new SqlCommand("INSERT INTO PendingUser (Id, f_name, l_name, uname, pwd, fig)" +
              "VALUES (@id, @fn, @ln, @usern, @pass, @pic)", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = Id;
             command.Parameters.Add("@fn", SqlDbType.VarChar).Value = fname;

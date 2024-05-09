@@ -1,4 +1,5 @@
-﻿using ListAndEditForm1.CourseNScore;
+﻿using ListAndEditForm1.Admin;
+using ListAndEditForm1.CourseNScore;
 using ListAndEditForm1.Result;
 using ListAndEditForm1.Score;
 using System;
@@ -136,7 +137,14 @@ namespace ListAndEditForm1
 
         private void aDMINToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AccountManage accountManage = new AccountManage();  
+            accountManage.Show(this);
+        }
 
+        private void staticResultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StaticResult staticResult = new StaticResult(); 
+            staticResult.Show(this);
         }
     }
 }

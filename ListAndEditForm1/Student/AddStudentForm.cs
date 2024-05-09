@@ -72,16 +72,6 @@ namespace ListAndEditForm1
                 MessageBox.Show("Empty Fields", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
-            TextBoxID.Clear();
-            TextBoxFirstName.Clear();
-            TextBoxLastName.Clear();
-            TextBoxPhone.Clear();   
-            dateTimePicker1.Checked = false;
-            radioButton1.Checked = false;
-            radioButton2.Checked = false;
-            TextBoxAddress.Clear(); 
-            
-
         }
         bool verif()
         {
@@ -123,6 +113,19 @@ namespace ListAndEditForm1
         }
 
         private void TextBoxPhone_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (!string.IsNullOrEmpty(textBox.Text))
+            {
+                if (!int.TryParse(textBox.Text, out _))
+                {
+                    MessageBox.Show("Invalid, please enter only number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox.Text = string.Empty;
+                }
+            }
+        }
+
+        private void TextBoxID_TextChanged(object sender, EventArgs e)
         {
             TextBox textBox = sender as TextBox;
             if (!string.IsNullOrEmpty(textBox.Text))

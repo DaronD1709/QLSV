@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ListAndEditForm1
+{
+    internal class StaticClass
+    {
+
+        public static int GlobalUserID { get; private set; }
+
+        public static void SetGlobalUserID(int UserID)
+        {
+            GlobalUserID = UserID;
+        }
+    }
+}

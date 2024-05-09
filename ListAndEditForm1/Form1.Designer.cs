@@ -37,6 +37,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.checkBoxShowPass = new System.Windows.Forms.CheckBox();
+            this.radiobtnstudent = new System.Windows.Forms.RadioButton();
+            this.radiobtnhuman = new System.Windows.Forms.RadioButton();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +86,7 @@
             this.bt_Cancel.BackColor = System.Drawing.Color.IndianRed;
             this.bt_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Cancel.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Cancel.Location = new System.Drawing.Point(170, 380);
+            this.bt_Cancel.Location = new System.Drawing.Point(178, 433);
             this.bt_Cancel.Name = "bt_Cancel";
             this.bt_Cancel.Size = new System.Drawing.Size(116, 46);
             this.bt_Cancel.TabIndex = 5;
@@ -96,7 +99,7 @@
             this.bt_Login.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Login.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Login.Location = new System.Drawing.Point(397, 380);
+            this.bt_Login.Location = new System.Drawing.Point(389, 433);
             this.bt_Login.Name = "bt_Login";
             this.bt_Login.Size = new System.Drawing.Size(116, 46);
             this.bt_Login.TabIndex = 6;
@@ -138,12 +141,52 @@
             this.checkBoxShowPass.UseVisualStyleBackColor = true;
             this.checkBoxShowPass.CheckedChanged += new System.EventHandler(this.checkBoxShowPass_CheckedChanged);
             // 
+            // radiobtnstudent
+            // 
+            this.radiobtnstudent.AutoSize = true;
+            this.radiobtnstudent.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiobtnstudent.Location = new System.Drawing.Point(203, 367);
+            this.radiobtnstudent.Name = "radiobtnstudent";
+            this.radiobtnstudent.Size = new System.Drawing.Size(91, 32);
+            this.radiobtnstudent.TabIndex = 9;
+            this.radiobtnstudent.TabStop = true;
+            this.radiobtnstudent.Text = "Student";
+            this.radiobtnstudent.UseVisualStyleBackColor = true;
+            // 
+            // radiobtnhuman
+            // 
+            this.radiobtnhuman.AutoSize = true;
+            this.radiobtnhuman.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiobtnhuman.Location = new System.Drawing.Point(344, 367);
+            this.radiobtnhuman.Name = "radiobtnhuman";
+            this.radiobtnhuman.Size = new System.Drawing.Size(161, 32);
+            this.radiobtnhuman.TabIndex = 10;
+            this.radiobtnhuman.TabStop = true;
+            this.radiobtnhuman.Text = "Human Resource";
+            this.radiobtnhuman.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Agency FB", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(33, 512);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(86, 24);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "New User ? ";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(632, 519);
+            this.ClientSize = new System.Drawing.Size(670, 554);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.radiobtnhuman);
+            this.Controls.Add(this.radiobtnstudent);
             this.Controls.Add(this.checkBoxShowPass);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bt_Login);
@@ -172,6 +215,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox checkBoxShowPass;
+        private System.Windows.Forms.RadioButton radiobtnstudent;
+        private System.Windows.Forms.RadioButton radiobtnhuman;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

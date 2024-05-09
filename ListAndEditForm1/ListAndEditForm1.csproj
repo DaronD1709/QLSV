@@ -89,6 +89,19 @@
     <Compile Include="CourseNScore\RemoveCourseForm.Designer.cs">
       <DependentUpon>RemoveCourseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Human Resource\HumanResourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Human Resource\HumanResourseForm.Designer.cs">
+      <DependentUpon>HumanResourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human Resource\User.cs" />
+    <Compile Include="Human Resource\UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Human Resource\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLSVDBDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -119,6 +132,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLSVDBDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLSVDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSVDBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLSVDBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSVDBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Score\AddScoreForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +173,7 @@
       <DependentUpon>RemoveScore.cs</DependentUpon>
     </Compile>
     <Compile Include="Score\SCORE.cs" />
+    <Compile Include="StaticClass.cs" />
     <Compile Include="Student\AddStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +254,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CourseNScore\RemoveCourseForm.resx">
       <DependentUpon>RemoveCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Human Resource\HumanResourseForm.resx">
+      <DependentUpon>HumanResourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Human Resource\UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Score\AddScoreForm.resx">
       <DependentUpon>AddScoreForm.cs</DependentUpon>
@@ -362,6 +401,28 @@
     <None Include="QLSVDBDataSet6.xss">
       <DependentUpon>QLSVDBDataSet6.xsd</DependentUpon>
     </None>
+    <None Include="QLSVDBDataSet7.xsc">
+      <DependentUpon>QLSVDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSVDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLSVDBDataSet7.xss">
+      <DependentUpon>QLSVDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDBDataSet8.xsc">
+      <DependentUpon>QLSVDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSVDBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLSVDBDataSet8.xss">
+      <DependentUpon>QLSVDBDataSet8.xsd</DependentUpon>
+    </None>
     <None Include="Resources\20230620_035549551_iOS.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -393,5 +454,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -69,11 +69,12 @@ namespace ListAndEditForm1
         }
         private void fillGrid(SqlCommand command)
         {
+           
             dataGridView1.ReadOnly = true;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
             dataGridView1.RowTemplate.Height = 80;
             dataGridView1.DataSource = student.getStudents(command);
-            picCol = (DataGridViewImageColumn)dataGridView1.Columns[7];
+            picCol = (DataGridViewImageColumn)dataGridView1.Columns[9];
             picCol.ImageLayout = DataGridViewImageCellLayout.Stretch;
             dataGridView1.AllowUserToAddRows = false;
             // Dem sinh vien 
@@ -216,7 +217,19 @@ namespace ListAndEditForm1
 
         private void Managestudentform_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qLSVDBDataSet8.std' table. You can move, or remove it, as needed.
 
+            this.stdTableAdapter.Fill(this.qLSVDBDataSet6.std);
+            TextBoxFname.KeyPress += textBox_KeyPress;
+            TextBoxLname.KeyPress += textBox_KeyPress;
+              SqlCommand command = new SqlCommand("SELECT * FROM std");
+            dataGridView1.ReadOnly = true;
+            DataGridViewImageColumn picCol = new DataGridViewImageColumn();
+            dataGridView1.RowTemplate.Height = 80;
+            dataGridView1.DataSource = student.getStudents(command);
+            picCol = (DataGridViewImageColumn)dataGridView1.Columns[9];
+            picCol.ImageLayout = DataGridViewImageCellLayout.Stretch;
+            dataGridView1.AllowUserToAddRows = false;
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -280,6 +293,7 @@ namespace ListAndEditForm1
                 byte[] picture = ms.ToArray();
                 updateCommand.Parameters.AddWithValue("@picture", picture);
 
+
                 // Thực hiện lệnh UPDATE trực tiếp từ đối tượng updateCommand
                 int result;
 
@@ -316,6 +330,30 @@ namespace ListAndEditForm1
         }
 
         private void LabelTotalStudent_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBoxFname_TextChanged(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Kiểm tra nếu ký tự nhập vào không phải là chữ cái
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Ngăn không cho ký tự được nhập vào TextBox
+                e.Handled = true;
+
+                // Hiển thị thông báo lỗi
+                MessageBox.Show("Invalid, please enter only letters.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -18,10 +18,15 @@ namespace ListAndEditForm1
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             Form1 flogin = new Form1();
+            if (flogin.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new MainForm01());
+            }
+            else
+            {
+                Application.Exit();
+            }
 
-                    Application.Run(new MainForm01());
-            
-            
         }
     }
 }

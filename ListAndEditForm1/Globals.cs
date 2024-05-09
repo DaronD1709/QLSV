@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ListAndEditForm1
 {
-    internal class StaticClass
+    internal class Globals
     {
 
         public static int GlobalUserID { get; private set; }

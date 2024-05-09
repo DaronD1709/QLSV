@@ -89,6 +89,13 @@
     <Compile Include="CourseNScore\RemoveCourseForm.Designer.cs">
       <DependentUpon>RemoveCourseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Human Resource\AddContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Human Resource\AddContact.Designer.cs">
+      <DependentUpon>AddContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human Resource\Contact.cs" />
     <Compile Include="Human Resource\HumanResourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +155,13 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Result\AVGResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result\AVGResult.Designer.cs">
+      <DependentUpon>AVGResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result\StudentResult.cs" />
     <Compile Include="Score\AddScoreForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,7 +187,7 @@
       <DependentUpon>RemoveScore.cs</DependentUpon>
     </Compile>
     <Compile Include="Score\SCORE.cs" />
-    <Compile Include="StaticClass.cs" />
+    <Compile Include="Globals.cs" />
     <Compile Include="Student\AddStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +269,9 @@
     <EmbeddedResource Include="CourseNScore\RemoveCourseForm.resx">
       <DependentUpon>RemoveCourseForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Human Resource\AddContact.resx">
+      <DependentUpon>AddContact.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Human Resource\HumanResourseForm.resx">
       <DependentUpon>HumanResourseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result\AVGResult.resx">
+      <DependentUpon>AVGResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Score\AddScoreForm.resx">
       <DependentUpon>AddScoreForm.cs</DependentUpon>
@@ -454,6 +474,8 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Admin\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,7 +13,35 @@ namespace ListAndEditForm1.Human_Resource
     {
         MY_DB mydb = new MY_DB();
 
-
+        private string id;
+        private string fname;
+        private string lname;
+        private string username;
+        private string password;
+        private string email;
+        private MemoryStream picture = new MemoryStream();
+        public string ID
+        { get { return id; } set { id = value; } }
+        public string Fname
+        { get { return fname; } set { fname = value; } }
+        public string Lname
+        { get { return lname; } set { lname = value; } }
+        public string Username
+        { get { return username; } set { username = value; } }
+        public string Password
+        { get { return password; } set { password = value; } }
+        public string Email
+        { get { return email; } set { email = value; } }
+        public MemoryStream Picture
+        { get { return picture; } set { picture = value; } }
+        public DataTable getUser(SqlCommand command)
+        {
+            command.Connection = mydb.getConnection;
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
         public bool insertUser(int Id, string fname, string lname, string username, string pass, MemoryStream picture)
         {
             SqlCommand command = new SqlCommand("INSERT INTO loginhuman (Id, f_name, l_name, uname, pwd, fig)" +

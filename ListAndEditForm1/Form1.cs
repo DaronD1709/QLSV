@@ -61,11 +61,10 @@ namespace ListAndEditForm1
                 if (table.Rows.Count > 0)
                 {
                     //MessageBox.Show("Ok , next time will go to Main Menu of App");
-                    int userid = Convert.ToInt16(table.Rows[0][0].ToString());
-                    // Dùng 1 lớp static Global Class, lớp này dùng để lấy và gọi ID từ table human ra 
+                    Globals.SetGlobalUserID(int.Parse(table.Rows[0][0].ToString()));                    // Dùng 1 lớp static Global Class, lớp này dùng để lấy và gọi ID từ table human ra 
 
 
-                   HumanResourseForm resourseForm = new HumanResourseForm();    
+                    HumanResourseForm resourseForm = new HumanResourseForm();    
                     resourseForm.Show();
                 }
                 else

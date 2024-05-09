@@ -52,6 +52,7 @@
             this.rESULTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aVGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.staticResultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDMINToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +63,8 @@
             this.sTUDENTToolStripMenuItem,
             this.cOURSEToolStripMenuItem,
             this.sCOREToolStripMenuItem,
-            this.rESULTToolStripMenuItem});
+            this.rESULTToolStripMenuItem,
+            this.aDMINToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(908, 30);
@@ -109,6 +111,7 @@
             this.editRemoveToolStripMenuItem.Name = "editRemoveToolStripMenuItem";
             this.editRemoveToolStripMenuItem.Size = new System.Drawing.Size(254, 26);
             this.editRemoveToolStripMenuItem.Text = "Edit / Remove";
+            this.editRemoveToolStripMenuItem.Click += new System.EventHandler(this.editRemoveToolStripMenuItem_Click);
             // 
             // manageStudentFormToolStripMenuItem
             // 
@@ -235,19 +238,28 @@
             this.rESULTToolStripMenuItem.Name = "rESULTToolStripMenuItem";
             this.rESULTToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
             this.rESULTToolStripMenuItem.Text = "RESULT";
+            this.rESULTToolStripMenuItem.Click += new System.EventHandler(this.rESULTToolStripMenuItem_Click);
             // 
             // aVGToolStripMenuItem
             // 
             this.aVGToolStripMenuItem.Name = "aVGToolStripMenuItem";
-            this.aVGToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.aVGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.aVGToolStripMenuItem.Text = "AVG Result By Score";
             this.aVGToolStripMenuItem.Click += new System.EventHandler(this.aVGToolStripMenuItem_Click);
             // 
             // staticResultToolStripMenuItem
             // 
             this.staticResultToolStripMenuItem.Name = "staticResultToolStripMenuItem";
-            this.staticResultToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.staticResultToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.staticResultToolStripMenuItem.Text = "Statics Result";
+            // 
+            // aDMINToolStripMenuItem
+            // 
+            this.aDMINToolStripMenuItem.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aDMINToolStripMenuItem.Name = "aDMINToolStripMenuItem";
+            this.aDMINToolStripMenuItem.Size = new System.Drawing.Size(62, 26);
+            this.aDMINToolStripMenuItem.Text = "ADMIN";
+            this.aDMINToolStripMenuItem.Click += new System.EventHandler(this.aDMINToolStripMenuItem_Click);
             // 
             // MainForm01
             // 
@@ -291,5 +303,6 @@
         private System.Windows.Forms.ToolStripMenuItem resultToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aVGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem staticResultToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aDMINToolStripMenuItem;
     }
 }

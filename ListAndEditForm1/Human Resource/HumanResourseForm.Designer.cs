@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnaddcontact = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -51,30 +50,32 @@
             this.button8 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lb_Name = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel1.Controls.Add(this.lb_Name);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.linkLabel2);
             this.panel1.Controls.Add(this.linkLabel1);
@@ -85,6 +86,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1283, 127);
             this.panel1.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(3, 126);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(658, 630);
+            this.panel7.TabIndex = 4;
             // 
             // linkLabel2
             // 
@@ -121,15 +129,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Welcome : ";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 102);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -152,25 +151,16 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Group";
             // 
-            // button1
+            // btnaddcontact
             // 
-            this.button1.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(170, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 48);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add Contact";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(170, 106);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(243, 48);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Edit Contact";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnaddcontact.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddcontact.Location = new System.Drawing.Point(126, 80);
+            this.btnaddcontact.Name = "btnaddcontact";
+            this.btnaddcontact.Size = new System.Drawing.Size(337, 48);
+            this.btnaddcontact.TabIndex = 3;
+            this.btnaddcontact.Text = "Add/Edit Contact";
+            this.btnaddcontact.UseVisualStyleBackColor = true;
+            this.btnaddcontact.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -293,8 +283,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnaddcontact);
             this.panel2.Location = new System.Drawing.Point(31, 178);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(579, 189);
@@ -312,6 +301,14 @@
             this.panel3.Size = new System.Drawing.Size(578, 225);
             this.panel3.TabIndex = 23;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(227, 24);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(235, 34);
+            this.textBox1.TabIndex = 18;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DarkGray;
@@ -324,6 +321,32 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(632, 164);
             this.panel4.TabIndex = 24;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(23, 96);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(104, 35);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "ID Group :";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(216, 97);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(243, 34);
+            this.textBox4.TabIndex = 19;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(216, 28);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(243, 34);
+            this.textBox2.TabIndex = 18;
             // 
             // panel5
             // 
@@ -338,6 +361,15 @@
             this.panel5.Size = new System.Drawing.Size(631, 193);
             this.panel5.TabIndex = 25;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(202, 17);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(343, 37);
+            this.comboBox1.TabIndex = 18;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkGray;
@@ -350,22 +382,6 @@
             this.panel6.TabIndex = 26;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(3, 126);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(658, 630);
-            this.panel7.TabIndex = 4;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(202, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(343, 37);
-            this.comboBox1.TabIndex = 18;
-            // 
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -374,40 +390,6 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(343, 37);
             this.comboBox2.TabIndex = 20;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(216, 28);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 34);
-            this.textBox2.TabIndex = 18;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(227, 24);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 34);
-            this.textBox1.TabIndex = 18;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(216, 97);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(243, 34);
-            this.textBox4.TabIndex = 19;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(23, 96);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 35);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "ID Group :";
             // 
             // panel8
             // 
@@ -418,12 +400,33 @@
             this.panel8.Size = new System.Drawing.Size(577, 88);
             this.panel8.TabIndex = 27;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(159, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lb_Name
+            // 
+            this.lb_Name.AutoSize = true;
+            this.lb_Name.Font = new System.Drawing.Font("Agency FB", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Name.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lb_Name.Location = new System.Drawing.Point(326, 21);
+            this.lb_Name.Name = "lb_Name";
+            this.lb_Name.Size = new System.Drawing.Size(62, 28);
+            this.lb_Name.TabIndex = 5;
+            this.lb_Name.Text = "label10";
+            // 
             // HumanResourseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1283, 701);
+            this.ClientSize = new System.Drawing.Size(1283, 732);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -438,7 +441,6 @@
             this.Load += new System.EventHandler(this.HumanResourseForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -449,6 +451,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,8 +466,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnaddcontact;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -490,5 +492,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label lb_Name;
     }
 }

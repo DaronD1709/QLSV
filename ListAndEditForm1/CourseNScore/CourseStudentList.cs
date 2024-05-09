@@ -20,6 +20,7 @@ namespace ListAndEditForm1.CourseNScore
         public CourseStudentList()
         {
             InitializeComponent();
+            txtnamecourse.Text = ManageCourseForm.x;
         }
 
         private void CourseStudentList_Load(object sender, EventArgs e)

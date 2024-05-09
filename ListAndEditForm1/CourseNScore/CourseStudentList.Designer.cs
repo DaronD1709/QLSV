@@ -37,15 +37,6 @@
             this.btnprint = new System.Windows.Forms.Button();
             this.stdTableAdapter = new ListAndEditForm1.QLSVDBDataSet3TableAdapters.stdTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.stdBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.qLSVDBDataSet6 = new ListAndEditForm1.QLSVDBDataSet6();
-            this.stdBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.qLSVDBDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qLSVDBDataSet5 = new ListAndEditForm1.QLSVDBDataSet5();
-            this.stdTableAdapter1 = new ListAndEditForm1.QLSVDBDataSet5TableAdapters.stdTableAdapter();
-            this.qLSVDBDataSet6BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.stdTableAdapter2 = new ListAndEditForm1.QLSVDBDataSet6TableAdapters.stdTableAdapter();
-            this.btnsearchcourse = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +47,15 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.selectedCourseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.stdBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet6 = new ListAndEditForm1.QLSVDBDataSet6();
+            this.stdBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDBDataSet5 = new ListAndEditForm1.QLSVDBDataSet5();
+            this.stdTableAdapter1 = new ListAndEditForm1.QLSVDBDataSet5TableAdapters.stdTableAdapter();
+            this.qLSVDBDataSet6BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stdTableAdapter2 = new ListAndEditForm1.QLSVDBDataSet6TableAdapters.stdTableAdapter();
+            this.btnsearchcourse = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.stdBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDBDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -94,6 +94,7 @@
             this.txtnamecourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtnamecourse.Multiline = true;
             this.txtnamecourse.Name = "txtnamecourse";
+            this.txtnamecourse.ReadOnly = true;
             this.txtnamecourse.Size = new System.Drawing.Size(327, 50);
             this.txtnamecourse.TabIndex = 2;
             // 
@@ -148,58 +149,6 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1310, 391);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // stdBindingSource2
-            // 
-            this.stdBindingSource2.DataMember = "std";
-            this.stdBindingSource2.DataSource = this.qLSVDBDataSet6;
-            // 
-            // qLSVDBDataSet6
-            // 
-            this.qLSVDBDataSet6.DataSetName = "QLSVDBDataSet6";
-            this.qLSVDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // stdBindingSource1
-            // 
-            this.stdBindingSource1.DataMember = "std";
-            this.stdBindingSource1.DataSource = this.qLSVDBDataSet5BindingSource;
-            // 
-            // qLSVDBDataSet5BindingSource
-            // 
-            this.qLSVDBDataSet5BindingSource.DataSource = this.qLSVDBDataSet5;
-            this.qLSVDBDataSet5BindingSource.Position = 0;
-            // 
-            // qLSVDBDataSet5
-            // 
-            this.qLSVDBDataSet5.DataSetName = "QLSVDBDataSet5";
-            this.qLSVDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // stdTableAdapter1
-            // 
-            this.stdTableAdapter1.ClearBeforeFill = true;
-            // 
-            // qLSVDBDataSet6BindingSource
-            // 
-            this.qLSVDBDataSet6BindingSource.DataSource = this.qLSVDBDataSet6;
-            this.qLSVDBDataSet6BindingSource.Position = 0;
-            // 
-            // stdTableAdapter2
-            // 
-            this.stdTableAdapter2.ClearBeforeFill = true;
-            // 
-            // btnsearchcourse
-            // 
-            this.btnsearchcourse.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnsearchcourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsearchcourse.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsearchcourse.Location = new System.Drawing.Point(846, 40);
-            this.btnsearchcourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnsearchcourse.Name = "btnsearchcourse";
-            this.btnsearchcourse.Size = new System.Drawing.Size(180, 55);
-            this.btnsearchcourse.TabIndex = 6;
-            this.btnsearchcourse.Text = "Search";
-            this.btnsearchcourse.UseVisualStyleBackColor = false;
-            this.btnsearchcourse.Click += new System.EventHandler(this.btnsearchcourse_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -270,6 +219,58 @@
             this.pictureDataGridViewImageColumn.HeaderText = "Picture";
             this.pictureDataGridViewImageColumn.MinimumWidth = 6;
             this.pictureDataGridViewImageColumn.Name = "pictureDataGridViewImageColumn";
+            // 
+            // stdBindingSource2
+            // 
+            this.stdBindingSource2.DataMember = "std";
+            this.stdBindingSource2.DataSource = this.qLSVDBDataSet6;
+            // 
+            // qLSVDBDataSet6
+            // 
+            this.qLSVDBDataSet6.DataSetName = "QLSVDBDataSet6";
+            this.qLSVDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // stdBindingSource1
+            // 
+            this.stdBindingSource1.DataMember = "std";
+            this.stdBindingSource1.DataSource = this.qLSVDBDataSet5BindingSource;
+            // 
+            // qLSVDBDataSet5BindingSource
+            // 
+            this.qLSVDBDataSet5BindingSource.DataSource = this.qLSVDBDataSet5;
+            this.qLSVDBDataSet5BindingSource.Position = 0;
+            // 
+            // qLSVDBDataSet5
+            // 
+            this.qLSVDBDataSet5.DataSetName = "QLSVDBDataSet5";
+            this.qLSVDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // stdTableAdapter1
+            // 
+            this.stdTableAdapter1.ClearBeforeFill = true;
+            // 
+            // qLSVDBDataSet6BindingSource
+            // 
+            this.qLSVDBDataSet6BindingSource.DataSource = this.qLSVDBDataSet6;
+            this.qLSVDBDataSet6BindingSource.Position = 0;
+            // 
+            // stdTableAdapter2
+            // 
+            this.stdTableAdapter2.ClearBeforeFill = true;
+            // 
+            // btnsearchcourse
+            // 
+            this.btnsearchcourse.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnsearchcourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsearchcourse.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsearchcourse.Location = new System.Drawing.Point(846, 40);
+            this.btnsearchcourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnsearchcourse.Name = "btnsearchcourse";
+            this.btnsearchcourse.Size = new System.Drawing.Size(180, 55);
+            this.btnsearchcourse.TabIndex = 6;
+            this.btnsearchcourse.Text = "Search";
+            this.btnsearchcourse.UseVisualStyleBackColor = false;
+            this.btnsearchcourse.Click += new System.EventHandler(this.btnsearchcourse_Click);
             // 
             // CourseStudentList
             // 

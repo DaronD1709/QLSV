@@ -56,7 +56,8 @@ namespace ListAndEditForm1
                 pic = (byte[])table.Rows[0]["picture"];
                 MemoryStream picture = new MemoryStream(pic);
                 picUp.Image = Image.FromStream(picture);
-                
+                updateDS.studentid = int.Parse(tb_id.Text);
+
             }
 
             else
@@ -177,10 +178,17 @@ namespace ListAndEditForm1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AddCourseFr addCourseFr = new AddCourseFr();
-            addCourseFr.Show(this);
-            updateDS.studentid = int.Parse(tb_id.Text);
+            if (updateDS == null || updateDS.IsDisposed)
+            {
+                // Nếu form đã bị giải phóng hoặc chưa được khởi tạo, thì khởi tạo mới
+                updateDS = new AddCourseFr();
+            }
 
+            // Gán ID mới cho UpDeStdF_AddCourse.StudentID
+            updateDS.studentid = !string.IsNullOrEmpty(tb_id.Text) ? int.Parse(tb_id.Text) : -1;
+
+            // Hiển thị form
+            updateDS.Show();
         }
     }
 }

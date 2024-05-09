@@ -1,4 +1,5 @@
 ﻿using ListAndEditForm1.CourseNScore;
+using ListAndEditForm1.Result;
 using ListAndEditForm1.Score;
 using System;
 using System.Collections.Generic;
@@ -117,6 +118,23 @@ namespace ListAndEditForm1
         }
 
         private void aVGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AVGResult aVGResult = new AVGResult();
+            aVGResult.Show(this);
+        }
+
+        private void editRemoveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateDeleteStudentForm updateDeleteStudentForm = new UpdateDeleteStudentForm();
+            updateDeleteStudentForm.Show(this);
+        }
+
+        private void rESULTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aDMINToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

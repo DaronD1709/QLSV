@@ -91,6 +91,7 @@
             this.txtstdid.Location = new System.Drawing.Point(187, 84);
             this.txtstdid.Margin = new System.Windows.Forms.Padding(4);
             this.txtstdid.Name = "txtstdid";
+            this.txtstdid.ReadOnly = true;
             this.txtstdid.Size = new System.Drawing.Size(273, 36);
             this.txtstdid.TabIndex = 4;
             this.txtstdid.TextChanged += new System.EventHandler(this.textBox1_TextChanged);

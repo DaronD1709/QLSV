@@ -55,7 +55,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Agency FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(602, 365);
+            this.label2.Location = new System.Drawing.Point(602, 353);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 35);
             this.label2.TabIndex = 13;
@@ -112,11 +112,11 @@
             this.dataGridViewAccountManagement.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewAccountManagement.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewAccountManagement.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAccountManagement.Location = new System.Drawing.Point(66, 417);
+            this.dataGridViewAccountManagement.Location = new System.Drawing.Point(66, 410);
             this.dataGridViewAccountManagement.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewAccountManagement.Name = "dataGridViewAccountManagement";
             this.dataGridViewAccountManagement.RowHeadersWidth = 51;
-            this.dataGridViewAccountManagement.Size = new System.Drawing.Size(1230, 238);
+            this.dataGridViewAccountManagement.Size = new System.Drawing.Size(1230, 245);
             this.dataGridViewAccountManagement.TabIndex = 16;
             // 
             // AccountManage

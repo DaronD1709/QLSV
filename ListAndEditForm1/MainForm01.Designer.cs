@@ -139,39 +139,40 @@
             this.cOURSEToolStripMenuItem.Name = "cOURSEToolStripMenuItem";
             this.cOURSEToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
             this.cOURSEToolStripMenuItem.Text = "COURSE";
+            this.cOURSEToolStripMenuItem.Click += new System.EventHandler(this.cOURSEToolStripMenuItem_Click);
             // 
             // addCourseToolStripMenuItem
             // 
             this.addCourseToolStripMenuItem.Name = "addCourseToolStripMenuItem";
-            this.addCourseToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.addCourseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addCourseToolStripMenuItem.Text = "Add Course";
             this.addCourseToolStripMenuItem.Click += new System.EventHandler(this.addCourseToolStripMenuItem_Click);
             // 
             // removeCourseToolStripMenuItem
             // 
             this.removeCourseToolStripMenuItem.Name = "removeCourseToolStripMenuItem";
-            this.removeCourseToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.removeCourseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.removeCourseToolStripMenuItem.Text = "Remove Course";
             this.removeCourseToolStripMenuItem.Click += new System.EventHandler(this.removeCourseToolStripMenuItem_Click);
             // 
             // editCourseToolStripMenuItem
             // 
             this.editCourseToolStripMenuItem.Name = "editCourseToolStripMenuItem";
-            this.editCourseToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.editCourseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.editCourseToolStripMenuItem.Text = "Edit Course";
             this.editCourseToolStripMenuItem.Click += new System.EventHandler(this.editCourseToolStripMenuItem_Click);
             // 
             // manageCourseToolStripMenuItem
             // 
             this.manageCourseToolStripMenuItem.Name = "manageCourseToolStripMenuItem";
-            this.manageCourseToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.manageCourseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.manageCourseToolStripMenuItem.Text = "Manage Course";
             this.manageCourseToolStripMenuItem.Click += new System.EventHandler(this.manageCourseToolStripMenuItem_Click);
             // 
             // printToolStripMenuItem1
             // 
             this.printToolStripMenuItem1.Name = "printToolStripMenuItem1";
-            this.printToolStripMenuItem1.Size = new System.Drawing.Size(187, 26);
+            this.printToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.printToolStripMenuItem1.Text = "Print";
             this.printToolStripMenuItem1.Click += new System.EventHandler(this.printToolStripMenuItem1_Click);
             // 
@@ -220,14 +221,16 @@
             // printToolStripMenuItem2
             // 
             this.printToolStripMenuItem2.Name = "printToolStripMenuItem2";
-            this.printToolStripMenuItem2.Size = new System.Drawing.Size(221, 26);
+            this.printToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
             this.printToolStripMenuItem2.Text = "Print";
+            this.printToolStripMenuItem2.Click += new System.EventHandler(this.printToolStripMenuItem2_Click);
             // 
             // resultToolStripMenuItem1
             // 
             this.resultToolStripMenuItem1.Name = "resultToolStripMenuItem1";
-            this.resultToolStripMenuItem1.Size = new System.Drawing.Size(221, 26);
+            this.resultToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.resultToolStripMenuItem1.Text = "Result";
+            this.resultToolStripMenuItem1.Click += new System.EventHandler(this.resultToolStripMenuItem1_Click);
             // 
             // rESULTToolStripMenuItem
             // 
@@ -243,14 +246,14 @@
             // aVGToolStripMenuItem
             // 
             this.aVGToolStripMenuItem.Name = "aVGToolStripMenuItem";
-            this.aVGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aVGToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.aVGToolStripMenuItem.Text = "AVG Result By Score";
             this.aVGToolStripMenuItem.Click += new System.EventHandler(this.aVGToolStripMenuItem_Click);
             // 
             // staticResultToolStripMenuItem
             // 
             this.staticResultToolStripMenuItem.Name = "staticResultToolStripMenuItem";
-            this.staticResultToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.staticResultToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.staticResultToolStripMenuItem.Text = "Statics Result";
             this.staticResultToolStripMenuItem.Click += new System.EventHandler(this.staticResultToolStripMenuItem_Click);
             // 

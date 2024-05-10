@@ -102,6 +102,12 @@
       <DependentUpon>AddContact.cs</DependentUpon>
     </Compile>
     <Compile Include="Human Resource\Contact.cs" />
+    <Compile Include="Human Resource\EditContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Human Resource\EditContact.Designer.cs">
+      <DependentUpon>EditContact.cs</DependentUpon>
+    </Compile>
     <Compile Include="Human Resource\Group.cs" />
     <Compile Include="Human Resource\HumanResourseForm.cs">
       <SubType>Form</SubType>
@@ -109,12 +115,30 @@
     <Compile Include="Human Resource\HumanResourseForm.Designer.cs">
       <DependentUpon>HumanResourseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Human Resource\ShowFullTeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Human Resource\ShowFullTeacherForm.Designer.cs">
+      <DependentUpon>ShowFullTeacherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human Resource\TeacherCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Human Resource\TeacherCourseForm.Designer.cs">
+      <DependentUpon>TeacherCourseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Human Resource\User.cs" />
     <Compile Include="Human Resource\UserInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Human Resource\UserInfo.Designer.cs">
       <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormStudent.Designer.cs">
+      <DependentUpon>MainFormStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="QLSVDBDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -288,11 +312,23 @@
     <EmbeddedResource Include="Human Resource\AddContact.resx">
       <DependentUpon>AddContact.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Human Resource\EditContact.resx">
+      <DependentUpon>EditContact.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Human Resource\HumanResourseForm.resx">
       <DependentUpon>HumanResourseForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Human Resource\ShowFullTeacherForm.resx">
+      <DependentUpon>ShowFullTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Human Resource\TeacherCourseForm.resx">
+      <DependentUpon>TeacherCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Human Resource\UserInfo.resx">
       <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormStudent.resx">
+      <DependentUpon>MainFormStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>

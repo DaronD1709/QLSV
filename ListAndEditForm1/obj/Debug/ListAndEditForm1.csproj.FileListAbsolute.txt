@@ -188,3 +188,7 @@ C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\
 C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Result.AVGResult.resources
 C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Result.StaticResult.resources
 C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Admin.AccountManage.resources
+C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Human_Resource.EditContact.resources
+C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Human_Resource.ShowFullTeacherForm.resources
+C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.Human_Resource.TeacherCourseForm.resources
+C:\Users\HALO\Desktop\Win bài đang làm\Winform2024-main\ListAndEditForm1\obj\Debug\ListAndEditForm1.MainFormStudent.resources

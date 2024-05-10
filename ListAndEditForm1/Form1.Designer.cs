@@ -35,11 +35,12 @@
             this.bt_Cancel = new System.Windows.Forms.Button();
             this.bt_Login = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.checkBoxShowPass = new System.Windows.Forms.CheckBox();
             this.radiobtnstudent = new System.Windows.Forms.RadioButton();
             this.radiobtnhuman = new System.Windows.Forms.RadioButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,16 +120,6 @@
             this.label3.Text = "Account Login";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ListAndEditForm1.Properties.Resources._20230620_035549551_iOS;
-            this.pictureBox1.Location = new System.Drawing.Point(59, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(141, 138);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // checkBoxShowPass
             // 
             this.checkBoxShowPass.AutoSize = true;
@@ -145,19 +136,19 @@
             // 
             this.radiobtnstudent.AutoSize = true;
             this.radiobtnstudent.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnstudent.Location = new System.Drawing.Point(203, 367);
+            this.radiobtnstudent.Location = new System.Drawing.Point(281, 377);
             this.radiobtnstudent.Name = "radiobtnstudent";
-            this.radiobtnstudent.Size = new System.Drawing.Size(91, 32);
+            this.radiobtnstudent.Size = new System.Drawing.Size(79, 32);
             this.radiobtnstudent.TabIndex = 9;
             this.radiobtnstudent.TabStop = true;
-            this.radiobtnstudent.Text = "Student";
+            this.radiobtnstudent.Text = "Admin";
             this.radiobtnstudent.UseVisualStyleBackColor = true;
             // 
             // radiobtnhuman
             // 
             this.radiobtnhuman.AutoSize = true;
             this.radiobtnhuman.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnhuman.Location = new System.Drawing.Point(344, 367);
+            this.radiobtnhuman.Location = new System.Drawing.Point(410, 377);
             this.radiobtnhuman.Name = "radiobtnhuman";
             this.radiobtnhuman.Size = new System.Drawing.Size(161, 32);
             this.radiobtnhuman.TabIndex = 10;
@@ -178,12 +169,35 @@
             this.linkLabel1.Text = "New User ? ";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ListAndEditForm1.Properties.Resources._20230620_035549551_iOS;
+            this.pictureBox1.Location = new System.Drawing.Point(59, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(141, 138);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(142, 377);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(91, 32);
+            this.radioButton1.TabIndex = 12;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Student";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(670, 554);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.radiobtnhuman);
             this.Controls.Add(this.radiobtnstudent);
@@ -218,6 +232,7 @@
         private System.Windows.Forms.RadioButton radiobtnstudent;
         private System.Windows.Forms.RadioButton radiobtnhuman;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 

@@ -146,5 +146,20 @@ namespace ListAndEditForm1
             StaticResult staticResult = new StaticResult(); 
             staticResult.Show(this);
         }
+
+        private void cOURSEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void resultToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

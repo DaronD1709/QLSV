@@ -96,7 +96,7 @@ namespace ListAndEditForm1.Admin
                     int rowsAffected = command.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Account added successfully to [UserHumanResource].");
+                        MessageBox.Show("Account added successfully to [loginhuman].");
                         // Xóa tài khoản từ bảng PendingUser
                         SqlCommand deleteCommand = new SqlCommand("DELETE FROM PendingUser WHERE Id = @id", db.getConnection);
                         deleteCommand.Parameters.AddWithValue("@id", id);
@@ -138,6 +138,7 @@ namespace ListAndEditForm1.Admin
 
         private void AccountManage_Load(object sender, EventArgs e)
         {
+
             LoadPendingAccounts();
             LoadAccounts();
         }

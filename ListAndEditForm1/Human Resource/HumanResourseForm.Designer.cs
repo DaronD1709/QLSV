@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_Name = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnaddcontact = new System.Windows.Forms.Button();
@@ -45,31 +47,29 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.NewNameGroupTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtuserID = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.GroupIdTextBox = new System.Windows.Forms.TextBox();
+            this.GroupNameTextBox = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.EditGroupComboBox = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.RemoveGroupComboBox = new System.Windows.Forms.ComboBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lb_Name = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,6 +86,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1283, 127);
             this.panel1.TabIndex = 0;
+            // 
+            // lb_Name
+            // 
+            this.lb_Name.AutoSize = true;
+            this.lb_Name.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Name.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lb_Name.Location = new System.Drawing.Point(326, 21);
+            this.lb_Name.Name = "lb_Name";
+            this.lb_Name.Size = new System.Drawing.Size(62, 28);
+            this.lb_Name.TabIndex = 5;
+            this.lb_Name.Text = "label10";
             // 
             // panel7
             // 
@@ -130,6 +141,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Welcome : ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(159, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -159,7 +180,7 @@
             this.btnaddcontact.Name = "btnaddcontact";
             this.btnaddcontact.Size = new System.Drawing.Size(337, 48);
             this.btnaddcontact.TabIndex = 3;
-            this.btnaddcontact.Text = "Add/Edit Contact";
+            this.btnaddcontact.Text = "Add Contact";
             this.btnaddcontact.UseVisualStyleBackColor = true;
             this.btnaddcontact.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -182,6 +203,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "Selected Contact";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -192,6 +214,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "Remove Contact";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -202,6 +225,7 @@
             this.button5.TabIndex = 10;
             this.button5.Text = "Show Full List";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label5
             // 
@@ -222,6 +246,7 @@
             this.button6.TabIndex = 12;
             this.button6.Text = "Add";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label6
             // 
@@ -252,14 +277,16 @@
             this.button7.TabIndex = 16;
             this.button7.Text = "Edit";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // textBox3
+            // NewNameGroupTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(203, 73);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(342, 34);
-            this.textBox3.TabIndex = 17;
+            this.NewNameGroupTextBox.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewNameGroupTextBox.Location = new System.Drawing.Point(203, 73);
+            this.NewNameGroupTextBox.Multiline = true;
+            this.NewNameGroupTextBox.Name = "NewNameGroupTextBox";
+            this.NewNameGroupTextBox.Size = new System.Drawing.Size(342, 34);
+            this.NewNameGroupTextBox.TabIndex = 17;
             // 
             // label8
             // 
@@ -280,6 +307,7 @@
             this.button8.TabIndex = 19;
             this.button8.Text = "Remove";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // panel2
             // 
@@ -293,7 +321,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DarkGray;
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtuserID);
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.label4);
@@ -302,20 +330,21 @@
             this.panel3.Size = new System.Drawing.Size(578, 225);
             this.panel3.TabIndex = 23;
             // 
-            // textBox1
+            // txtuserID
             // 
-            this.textBox1.Location = new System.Drawing.Point(227, 24);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 34);
-            this.textBox1.TabIndex = 18;
+            this.txtuserID.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuserID.Location = new System.Drawing.Point(227, 24);
+            this.txtuserID.Multiline = true;
+            this.txtuserID.Name = "txtuserID";
+            this.txtuserID.Size = new System.Drawing.Size(235, 34);
+            this.txtuserID.TabIndex = 18;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DarkGray;
             this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.GroupIdTextBox);
+            this.panel4.Controls.Add(this.GroupNameTextBox);
             this.panel4.Controls.Add(this.button6);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(630, 178);
@@ -333,27 +362,29 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "ID Group :";
             // 
-            // textBox4
+            // GroupIdTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(216, 97);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(243, 34);
-            this.textBox4.TabIndex = 19;
+            this.GroupIdTextBox.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupIdTextBox.Location = new System.Drawing.Point(216, 97);
+            this.GroupIdTextBox.Multiline = true;
+            this.GroupIdTextBox.Name = "GroupIdTextBox";
+            this.GroupIdTextBox.Size = new System.Drawing.Size(243, 34);
+            this.GroupIdTextBox.TabIndex = 19;
             // 
-            // textBox2
+            // GroupNameTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(216, 28);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 34);
-            this.textBox2.TabIndex = 18;
+            this.GroupNameTextBox.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupNameTextBox.Location = new System.Drawing.Point(216, 28);
+            this.GroupNameTextBox.Multiline = true;
+            this.GroupNameTextBox.Name = "GroupNameTextBox";
+            this.GroupNameTextBox.Size = new System.Drawing.Size(243, 34);
+            this.GroupNameTextBox.TabIndex = 18;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkGray;
-            this.panel5.Controls.Add(this.comboBox1);
-            this.panel5.Controls.Add(this.textBox3);
+            this.panel5.Controls.Add(this.EditGroupComboBox);
+            this.panel5.Controls.Add(this.NewNameGroupTextBox);
             this.panel5.Controls.Add(this.button7);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label6);
@@ -362,19 +393,19 @@
             this.panel5.Size = new System.Drawing.Size(631, 193);
             this.panel5.TabIndex = 25;
             // 
-            // comboBox1
+            // EditGroupComboBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(202, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(343, 37);
-            this.comboBox1.TabIndex = 18;
+            this.EditGroupComboBox.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditGroupComboBox.FormattingEnabled = true;
+            this.EditGroupComboBox.Location = new System.Drawing.Point(202, 17);
+            this.EditGroupComboBox.Name = "EditGroupComboBox";
+            this.EditGroupComboBox.Size = new System.Drawing.Size(343, 36);
+            this.EditGroupComboBox.TabIndex = 18;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkGray;
-            this.panel6.Controls.Add(this.comboBox2);
+            this.panel6.Controls.Add(this.RemoveGroupComboBox);
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.button8);
             this.panel6.Location = new System.Drawing.Point(631, 547);
@@ -383,14 +414,14 @@
             this.panel6.TabIndex = 26;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // comboBox2
+            // RemoveGroupComboBox
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(199, 18);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(343, 37);
-            this.comboBox2.TabIndex = 20;
+            this.RemoveGroupComboBox.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveGroupComboBox.FormattingEnabled = true;
+            this.RemoveGroupComboBox.Location = new System.Drawing.Point(199, 18);
+            this.RemoveGroupComboBox.Name = "RemoveGroupComboBox";
+            this.RemoveGroupComboBox.Size = new System.Drawing.Size(343, 36);
+            this.RemoveGroupComboBox.TabIndex = 20;
             // 
             // panel8
             // 
@@ -400,27 +431,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(577, 88);
             this.panel8.TabIndex = 27;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lb_Name
-            // 
-            this.lb_Name.AutoSize = true;
-            this.lb_Name.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Name.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_Name.Location = new System.Drawing.Point(326, 21);
-            this.lb_Name.Name = "lb_Name";
-            this.lb_Name.Size = new System.Drawing.Size(62, 28);
-            this.lb_Name.TabIndex = 5;
-            this.lb_Name.Text = "label10";
             // 
             // HumanResourseForm
             // 
@@ -442,6 +452,7 @@
             this.Load += new System.EventHandler(this.HumanResourseForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -452,7 +463,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,7 +487,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox NewNameGroupTextBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel2;
@@ -486,12 +496,12 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtuserID;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox GroupIdTextBox;
+        private System.Windows.Forms.TextBox GroupNameTextBox;
+        private System.Windows.Forms.ComboBox EditGroupComboBox;
+        private System.Windows.Forms.ComboBox RemoveGroupComboBox;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label lb_Name;
     }

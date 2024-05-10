@@ -73,6 +73,30 @@ namespace ListAndEditForm1
                 }
             }
             
+            else
+            {
+                SqlDataAdapter adapter1 = new SqlDataAdapter();
+                DataTable table = new DataTable();
+                SqlCommand command = new SqlCommand("SELECT * FROM loginhuman WHERE uname = @User AND pwd = @Pass", db.getConnection);
+                command.Parameters.Add("@User", SqlDbType.VarChar).Value = TextBoxUserName.Text;
+                command.Parameters.Add("@Pass", SqlDbType.VarChar).Value = TextBoxPassword.Text;
+                adapter1.SelectCommand = command;
+                adapter1.Fill(table);
+                if (table.Rows.Count > 0)
+                {
+                    //MessageBox.Show("Ok , next time will go to Main Menu of App");
+                    Globals.SetGlobalUserID(int.Parse(table.Rows[0][0].ToString()));                    // Dùng 1 lớp static Global Class, lớp này dùng để lấy và gọi ID từ table human ra 
+
+
+                    MainFormStudent mainFormStudent = new MainFormStudent();
+                    mainFormStudent.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Username Or Password", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+               
+            }
 
             
         }
